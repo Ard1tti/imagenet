@@ -1,0 +1,342 @@
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcurand.so locally
+Training ResNet_imagenet model
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:05:00.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x66d55b0
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 1 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:06:00.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x6ae7f30
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 2 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:09:00.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x6eff220
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 3 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:0a:00.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x731cb40
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 4 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:84:00.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x773de20
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 5 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:85:00.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x7b62c30
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 6 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:88:00.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x7f8bad0
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 7 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:89:00.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 0 to device ordinal 4
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 0 to device ordinal 5
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 0 to device ordinal 6
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 0 to device ordinal 7
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 1 to device ordinal 4
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 1 to device ordinal 5
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 1 to device ordinal 6
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 1 to device ordinal 7
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 2 to device ordinal 4
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 2 to device ordinal 5
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 2 to device ordinal 6
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 2 to device ordinal 7
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 3 to device ordinal 4
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 3 to device ordinal 5
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 3 to device ordinal 6
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 3 to device ordinal 7
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 4 to device ordinal 0
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 4 to device ordinal 1
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 4 to device ordinal 2
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 4 to device ordinal 3
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 5 to device ordinal 0
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 5 to device ordinal 1
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 5 to device ordinal 2
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 5 to device ordinal 3
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 6 to device ordinal 0
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 6 to device ordinal 1
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 6 to device ordinal 2
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 6 to device ordinal 3
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 7 to device ordinal 0
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 7 to device ordinal 1
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 7 to device ordinal 2
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 7 to device ordinal 3
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:126] DMA: 0 1 2 3 4 5 6 7 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 0:   Y Y Y Y N N N N 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 1:   Y Y Y Y N N N N 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 2:   Y Y Y Y N N N N 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 3:   Y Y Y Y N N N N 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 4:   N N N N Y Y Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 5:   N N N N Y Y Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 6:   N N N N Y Y Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 7:   N N N N Y Y Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:05:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:1) -> (device: 1, name: Tesla K80, pci bus id: 0000:06:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:2) -> (device: 2, name: Tesla K80, pci bus id: 0000:09:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:3) -> (device: 3, name: Tesla K80, pci bus id: 0000:0a:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:4) -> (device: 4, name: Tesla K80, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:5) -> (device: 5, name: Tesla K80, pci bus id: 0000:85:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:6) -> (device: 6, name: Tesla K80, pci bus id: 0000:88:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:7) -> (device: 7, name: Tesla K80, pci bus id: 0000:89:00.0)
+Variables are restored from ../../ckpt/ResNet_imagenet/
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 1912 get requests, put_count=1622 evicted_count=1000 eviction_rate=0.616523 and unsatisfied allocation rate=0.726987
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 100 to 110
+step 5, cross_entropy 7.48589
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 1912 get requests, put_count=1803 evicted_count=1000 eviction_rate=0.554631 and unsatisfied allocation rate=0.591004
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 233 to 256
+step 10, cross_entropy 7.47067
+step 15, cross_entropy 7.4133
+step 20, cross_entropy 7.45322
+test accuracy 0.0195312
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 3824 get requests, put_count=3498 evicted_count=1000 eviction_rate=0.285878 and unsatisfied allocation rate=0.360879
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 596 to 655
+step 25, cross_entropy 7.40236
+step 30, cross_entropy 7.38388
+step 35, cross_entropy 7.33199
+step 40, cross_entropy 7.34074
+test accuracy 0.00390625
+step 45, cross_entropy 7.35154
+step 50, cross_entropy 7.36016
+step 55, cross_entropy 7.25997
+step 60, cross_entropy 7.28681
+test accuracy 0.0117188
+step 65, cross_entropy 7.26625
+step 70, cross_entropy 7.28983
+step 75, cross_entropy 7.2244
+step 80, cross_entropy 7.20117
+test accuracy 0.0390625
+Enter username for Temporarily Closed Pending Security Update at www.af-moma.no: Enter username for Temporarily Closed Pending Security Update at www.af-moma.no: step 85, cross_entropy 7.19476
+step 90, cross_entropy 7.2138
+step 95, cross_entropy 7.12202
+step 100, cross_entropy 7.13827
+test accuracy 0.0078125
+step 105, cross_entropy 7.13536
+Enter username for ByPassword at www.premier-tools.com: Enter username for ByPassword at www.premier-tools.com: Enter username for ByPassword at www.premier-tools.com: Enter username for ByPassword at www.premier-tools.com: Enter username for ByPassword at www.premier-tools.com: step 110, cross_entropy 7.12014
+step 115, cross_entropy 7.13861
+step 120, cross_entropy 7.14497
+test accuracy 0.0078125
+step 125, cross_entropy 7.0953
+step 130, cross_entropy 6.99429
+step 135, cross_entropy 7.1402
+step 140, cross_entropy 7.13327
+test accuracy 0.0429688
+step 145, cross_entropy 7.0762
+step 150, cross_entropy 7.05677
+step 155, cross_entropy 7.08217
+step 160, cross_entropy 7.05997
+test accuracy 0.0117188
+step 165, cross_entropy 6.98553
+step 170, cross_entropy 7.0341
+step 175, cross_entropy 7.0497
+step 180, cross_entropy 7.02713
+test accuracy 0
+step 185, cross_entropy 7.00809
+step 190, cross_entropy 7.044
+step 195, cross_entropy 7.03075
+step 200, cross_entropy 7.01677
+test accuracy 0.0117188
+Model saved in ../../ckpt/ResNet_imagenet/
+step 205, cross_entropy 7.02878
+step 210, cross_entropy 7.03455
+step 215, cross_entropy 6.97712
+step 220, cross_entropy 7.01797
+test accuracy 0.015625
+step 225, cross_entropy 6.99452
+step 230, cross_entropy 6.98455
+step 235, cross_entropy 6.94305
+step 240, cross_entropy 7.01328
+test accuracy 0
+step 245, cross_entropy 6.95959
+step 250, cross_entropy 7.02062
+step 255, cross_entropy 6.96706
+step 260, cross_entropy 6.94064
+test accuracy 0.0195312
+step 265, cross_entropy 6.95716
+step 270, cross_entropy 6.93288
+step 275, cross_entropy 6.92453
+step 280, cross_entropy 6.9513
+test accuracy 0.00390625
+step 285, cross_entropy 6.93084
+step 290, cross_entropy 6.96657
+step 295, cross_entropy 6.96764
+step 300, cross_entropy 6.96777
+test accuracy 0
+step 305, cross_entropy 6.94697
+step 310, cross_entropy 6.94363
+step 315, cross_entropy 7.0264
+step 320, cross_entropy 6.95961
+test accuracy 0.015625
+step 325, cross_entropy 6.95649
+step 330, cross_entropy 6.92272
+step 335, cross_entropy 6.94938
+step 340, cross_entropy 6.90716
+test accuracy 0.0195312
+step 345, cross_entropy 6.9121
+step 350, cross_entropy 6.95742
+step 355, cross_entropy 6.91594
+step 360, cross_entropy 6.90133
+test accuracy 0.0195312
+step 365, cross_entropy 6.97554
+step 370, cross_entropy 6.9368
+step 375, cross_entropy 6.93013
+step 380, cross_entropy 6.97079
+test accuracy 0
+step 385, cross_entropy 6.9311
+step 390, cross_entropy 6.96865
+step 395, cross_entropy 6.90092
+step 400, cross_entropy 6.9096
+test accuracy 0.00390625
+Model saved in ../../ckpt/ResNet_imagenet/
+step 405, cross_entropy 6.94395
+step 410, cross_entropy 6.89729
+step 415, cross_entropy 6.90422
+step 420, cross_entropy 6.93571
+test accuracy 0.015625
+step 425, cross_entropy 6.98471
+step 430, cross_entropy 6.83126
+step 435, cross_entropy 6.94923
+step 440, cross_entropy 6.94446
+test accuracy 0.0078125
+step 445, cross_entropy 6.94335
+step 450, cross_entropy 6.95182
+step 455, cross_entropy 6.93604
+step 460, cross_entropy 6.89998
+test accuracy 0.0117188
+step 465, cross_entropy 6.92711
+step 470, cross_entropy 6.89678
+step 475, cross_entropy 6.93916
+step 480, cross_entropy 6.93797
+test accuracy 0.0078125
+step 485, cross_entropy 6.9294
+step 490, cross_entropy 6.91391
+step 495, cross_entropy 6.92816
+step 500, cross_entropy 6.92234
+test accuracy 0.015625
+Enter username for www.camphirock.com at www.camphirock.com: Enter username for www.camphirock.com at www.camphirock.com: Enter username for www.camphirock.com at www.camphirock.com: Enter username for www.camphirock.com at www.camphirock.com: step 505, cross_entropy 6.94767
+step 510, cross_entropy 6.91305
+step 515, cross_entropy 6.91822
+step 520, cross_entropy 6.90173
+test accuracy 0.00390625
+step 525, cross_entropy 6.97738
+step 530, cross_entropy 6.89322
+step 535, cross_entropy 6.93904
+step 540, cross_entropy 6.87381
+test accuracy 0
+step 545, cross_entropy 6.87922
+step 550, cross_entropy 6.90048
+step 555, cross_entropy 6.87983
+step 560, cross_entropy 6.92836
+test accuracy 0.00390625
+Enter username for Temporarily Closed Pending Security Update at www.af-moma.no: Enter username for Temporarily Closed Pending Security Update at www.af-moma.no: Enter username for Temporarily Closed Pending Security Update at www.af-moma.no: Enter username for Temporarily Closed Pending Security Update at www.af-moma.no: Enter username for Temporarily Closed Pending Security Update at www.af-moma.no: Enter username for Temporarily Closed Pending Security Update at www.af-moma.no: step 565, cross_entropy 6.88277
+step 570, cross_entropy 6.9124
+step 575, cross_entropy 6.93239
+step 580, cross_entropy 6.9458
+test accuracy 0.00390625
+step 585, cross_entropy 6.90761
+step 590, cross_entropy 6.90723
+step 595, cross_entropy 6.95468
+step 600, cross_entropy 6.93333
+test accuracy 0.0078125
+Enter username for Acceso Protegido at www.norasantos.com: Enter username for Acceso Protegido at www.norasantos.com: Enter username for Acceso Protegido at www.norasantos.com: Model saved in ../../ckpt/ResNet_imagenet/
+step 605, cross_entropy 6.93176
+step 610, cross_entropy 6.89681
+step 615, cross_entropy 6.98391
+Enter username for Password Protected Gallery at www.campmiddlesex.com: step 620, cross_entropy 6.91826
+test accuracy 0
+step 625, cross_entropy 6.92794
+step 630, cross_entropy 6.91324
+step 635, cross_entropy 6.88258
+step 640, cross_entropy 6.87322
+Enter username for Acceso Protegido at www.norasantos.com: test accuracy 0.0234375
+step 645, cross_entropy 6.9239
+step 650, cross_entropy 6.92116
+step 655, cross_entropy 6.89598
+step 660, cross_entropy 6.92588
+test accuracy 0
+step 665, cross_entropy 6.93051
+step 670, cross_entropy 6.92731
+step 675, cross_entropy 6.93904
+step 680, cross_entropy 6.94601
+test accuracy 0
+step 685, cross_entropy 6.90777
+step 690, cross_entropy 6.85803
+step 695, cross_entropy 6.90849
+step 700, cross_entropy 6.91031
+test accuracy 0
+step 705, cross_entropy 6.91836
+step 710, cross_entropy 6.92321
+step 715, cross_entropy 6.8965
+step 720, cross_entropy 6.90268
+test accuracy 0.0234375
+step 725, cross_entropy 6.95534
+step 730, cross_entropy 6.90341
+step 735, cross_entropy 6.9005
+step 740, cross_entropy 6.92545
+test accuracy 0.0234375
+step 745, cross_entropy 6.87836
+step 750, cross_entropy 6.8621
+step 755, cross_entropy 6.897
+step 760, cross_entropy 6.90184
+test accuracy 0
+step 765, cross_entropy 6.90634
+step 770, cross_entropy 6.916
+step 775, cross_entropy 6.95619
+step 780, cross_entropy 6.86827
+test accuracy 0.0195312
+step 785, cross_entropy 6.97155
+step 790, cross_entropy 6.91281
+step 795, cross_entropy 6.89234
+step 800, cross_entropy 6.95019
+test accuracy 0
+Model saved in ../../ckpt/ResNet_imagenet/
+step 805, cross_entropy 6.948
+step 810, cross_entropy 6.95439
+step 815, cross_entropy 6.88798
+step 820, cross_entropy 6.9401
+test accuracy 0
+step 825, cross_entropy 6.93202
+step 830, cross_entropy 6.83453
+step 835, cross_entropy 6.90862
+step 840, cross_entropy 6.97275
+test accuracy 0.0195312
+step 845, cross_entropy 6.88035
+step 850, cross_entropy 6.88692
+step 855, cross_entropy 6.97254
+step 860, cross_entropy 6.92798
+test accuracy 0
+step 865, cross_entropy 6.9027
+step 870, cross_entropy 6.94775
+step 875, cross_entropy 6.86186
+step 880, cross_entropy 6.89733
+test accuracy 0
+step 885, cross_entropy 6.97141

@@ -25,7 +25,8 @@ def augment(images, BATCH_NUM):
     return tf.convert_to_tensor(res_dist, dtype=tf.float32)
     
 def inference(images, CLASS_NUM, is_training=False):
-    conv1 = layer.conv2d_layer(images, [7,7,3,64], stride=2, activation_fn=None,name="conv1")
+    batch0 = layer.bn_layer(images, is_training=is_training, name="batch0")
+    conv1 = layer.conv2d_layer(batch0, [7,7,3,64], stride=2, activation_fn=None,name="conv1")
     batch1 = layer.bn_layer(conv1, is_training=is_training, name="batch1")
     max1 = layer.max_pool_layer(batch1, stride=2, name="max1")
     res1_1 = layer.residual_layer(max1, [3,3,64,64], name="res1_1")

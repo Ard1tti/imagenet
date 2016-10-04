@@ -9,7 +9,7 @@ import os
 BATCH_SIZE=32
 EVAL_SIZE=32
 CLASS_NUM=1000
-GPU_LIST=[4,5,6,7\
+GPU_LIST=[4,5,6,7]
 NUM_GPUS=len(GPU_LIST)
 CKPT_DIR="../../ckpt/"+model.__name__+"/"
 IMG_SIZE=[224,224]
@@ -17,13 +17,15 @@ IMG_SIZE=[224,224]
 def tower_loss(images, labels, scope):
     logits = model.inference(images, CLASS_NUM, True)
     _ = model.loss(logits, labels)
+    with tf.device('/cpu:0'):
+        accu = tf.reduce_mean(tf.cast(tf.nn.in_top_k(logits, labels, 5), tf.float32))
     
     tf.get_variable_scope().reuse_variables()
 
     losses = tf.get_collection('losses', scope)
     
     total_loss = tf.add_n(losses, name='total_loss')
-    return total_loss
+    return total_loss, accu
 
 def tower_accuracy(images, labels):
     logits = model.inference(images, CLASS_NUM, False)
@@ -92,8 +94,9 @@ def train():
         for i in xrange(NUM_GPUS):
             with tf.device('/gpu:%d' % GPU_LIST[i]):
                 with tf.name_scope('%s_%d' % ('tower', i)) as scope:
-                    loss = tower_loss(images[i],labels[i], scope)
-                    accu = tower_accuracy(val_images[i],val_labels[i])
+                    loss, accu = tower_loss(images[i],labels[i], scope)
+                    tf.get_variable_scope().reuse_variables()
+                    #accu = tower_accuracy(val_images[i],val_labels[i])
                     grads = opt.compute_gradients(loss)
                     tower_accu.append(accu)
                     tower_losses.append(loss)
@@ -138,23 +141,27 @@ def train():
                     img_batch, lab_batch = train_data.train_batch(BATCH_SIZE, coord)
                     feed_dict.update({images[i]: img_batch, labels[i]: lab_batch})
                 
-                _, cross_entropy = sess.run([train_op, mean_loss],
-                                            feed_dict = feed_dict)
+                _, cross_entropy, accuracy = sess.run([train_op, mean_loss, mean_accu],
+                                                       feed_dict = feed_dict)
                 mean = mean + cross_entropy/n_mean
+                mean_a = mean_a + accuracy/n_mean
                 if (batch_i+1)%n_mean == 0:
-                    print("step %d, cross_entropy %g"%(batch_i+1, mean))
+                    print("step %d, cross_entropy %g accuracy %g"%(batch_i+1, mean,
+                                                                  mean_a))
                     mean=0.
+                    mean_a=0.
             
-                if (batch_i+1)%n_mean_a == 0:
-                    feed_dict={}
-                    for i in xrange(NUM_GPUS):
-                        img_batch, lab_batch = val_data.train_batch(EVAL_SIZE, coord)
-                        feed_dict.update({val_images[i]: img_batch, val_labels[i]: lab_batch})
-                        
-                    eval_accuracy = sess.run(mean_accu, feed_dict = feed_dict)
-                    if eval_accuracy > highest:
-                        highest = eval_accuracy
-                    print("test accuracy %g"%(eval_accuracy))
+                #if (batch_i+1)%n_mean_a == 0:
+                #    feed_dict={}
+                #    for i in xrange(NUM_GPUS):
+                #        img_batch, lab_batch = val_data.train_batch(EVAL_SIZE, coord)
+                #        feed_dict.update({val_images[i]: img_batch,
+                #                          val_labels[i]: lab_batch})
+                #        
+                #    eval_accuracy = sess.run(mean_accu, feed_dict = feed_dict)
+                #    if eval_accuracy > highest:
+                #        highest = eval_accuracy
+                #    print("test accuracy %g"%(eval_accuracy))
                     
                 if (batch_i+1)%200 == 0:
                     checkpoint_path = os.path.join(CKPT_DIR, 'model.ckpt')

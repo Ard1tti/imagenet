@@ -22,23 +22,23 @@ def bias_variable(shape, const=0.1):
 
 #layers
 def conv2d_layer(x, shape, stride=1, name='conv2d', activation_fn=None):
-    with tf.variable_scope(default_name=name) as scope:
+    with tf.variable_scope(name) as scope:
         kernel = weight_variable(shape=shape)
         biases = bias_variable(shape=shape[3])
         conv = tf.nn.conv2d(x, kernel, [1,stride,stride,1], padding='SAME')
-        bias = tf.nn.bias_add(conv,biases)
+        outputs = tf.nn.bias_add(conv,biases)
         if activation_fn:
-            outputs=activation_fn(bias)
+            outputs=activation_fn(outputs)
         return outputs
 
 def max_pool_layer(x, stride=2, name='max_pool'):
-    with tf.variable_scope(default_name=name) as scope:
+    with tf.variable_scope(name) as scope:
         outputs=tf.nn.max_pool(x, name=name, ksize=[1,3,3,1],
                                strides=[1,stride,stride,1],padding='SAME')
         return outputs
 
 def inception_layer(x, width, ker1, red3, ker3, red5, ker5, pool, name='inception'):
-    with tf.variable_scope(default_name=name) as scope:
+    with tf.variable_scope(name) as scope:
         conv1 = conv2d_layer(x, [1, 1, width, ker1], name='conv1', 
                             activation_fn=tf.nn.relu)
     
@@ -58,18 +58,18 @@ def inception_layer(x, width, ker1, red3, ker3, red5, ker5, pool, name='inceptio
         return outputs
 
 def residual_layer(x, shape, name='residual', activation_fn=tf.nn.relu):
-    with tf.variable_scope(default_name=name) as scope:
+    with tf.variable_scope(name) as scope:
         assert shape[2]==shape[3]    
         conv1 = conv2d_layer(x, shape, name='conv1', activation_fn=tf.nn.relu)
         conv2 = conv2d_layer(conv1, shape, name='conv2')
-        outputs = tf.add(x,conv2, name=scop.name)
+        outputs = tf.add(x,conv2, name=scope.name)
         if activation_fn:
             outputs = activation_fn(outputs)
         return outputs
 
 def resinc_layer(x, width, ker1, red3, ker3, red5, ker5, pool, ker=3, 
                  name='residual', activation_fn=tf.nn.relu):
-    with tf.variable_scope(default_name=name) as scope:
+    with tf.variable_scope(name) as scope:
         inc_out = ker1+ker3+ker5+pool
         shape=[ker,ker,inc_out,width]
     
@@ -77,13 +77,13 @@ def resinc_layer(x, width, ker1, red3, ker3, red5, ker5, pool, ker=3,
                                     name='inception')
         conv = conv2d_layer(inception, shape, name='conv')
         outputs = tf.add(x,conv, name=scope.name)
-        if activation:
-            outputs=activation(outputs) 
+        if activation_fn:
+            outputs=activation_fn(outputs) 
         return outputs
 
 def bn_layer(inputs, is_training=True, trainable=True, activation_fn=None,
-             decay=0.999, center=True, scale=False, epsilon=0.001):
-    with tf.variable_scope('BatchNorm') as sc:
+             decay=0.999, center=True, scale=False, epsilon=0.001, name="BatchNorm"):
+    with tf.variable_scope(name) as sc:
         inputs_shape = inputs.get_shape()
         inputs_rank = inputs_shape.ndims
         if inputs_rank is None:
