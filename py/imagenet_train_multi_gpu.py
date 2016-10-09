@@ -74,7 +74,7 @@ def train():
                 for _ in xrange(NUM_GPUS)]
         labels=[tf.placeholder(tf.int32, shape=[BATCH_SIZE]) for _ in xrange(NUM_GPUS)]
         
-        val_images=[tf.placeholder(tf.float32, shape=[EVAL_SIZE,IMG_SIZE[0],IMG_SIZE[1],3])
+        val_images=[tf.placeholder(tf.float32, shape=[EVAL_SIZE,None,None,3])
                     for _ in xrange(NUM_GPUS)]
         val_labels=[tf.placeholder(tf.int32, shape=[EVAL_SIZE]) for _ in xrange(NUM_GPUS)]
                 

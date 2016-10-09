@@ -9,21 +9,7 @@ import tensorflow as tf
 import imagenet_layer as layer
 import numpy as np
 import time
-
-def augment(images, BATCH_NUM):
-    images=tf.convert_to_tensor(images, dtype=tf.uint8)
-    
-    res_dist=[]
-    for i in xrange(BATCH_NUM):
-        x=images[i,:,:,:]
-        distort_x = tf.image.random_flip_left_right(x, seed=int(time.time()))
-        distort_x = tf.image.per_image_whitening(distort_x)
-        distort_x = tf.image.random_brightness(distort_x, max_delta=63)
-        distort_x = tf.image.random_contrast(distort_x, lower=0.2, upper=1.8)
-        res_dist.append(distort_x)
-        
-    return tf.convert_to_tensor(res_dist, dtype=tf.float32)
-    
+  
 def inference(images, CLASS_NUM, is_training=False):
     batch0 = layer.bn_layer(images, is_training=is_training, name="batch0")
     conv1 = layer.conv2d_layer(batch0, [7,7,3,64], stride=2, activation_fn=None,name="conv1")
@@ -75,9 +61,3 @@ def loss(logits, labels):
     # The total loss is defined as the cross entropy loss plus all of the weight
     # decay terms (L2 loss).
     return tf.add_n(tf.get_collection('losses'), name='total_loss')
-    
-def train(total_loss, lr):
-    opt = tf.train.GradientDescentOptimizer(lr)
-    grads = opt.compute_gradients(total_loss)
-    apply_gradient_op = opt.apply_gradients(grads)
-    return apply_gradient_op

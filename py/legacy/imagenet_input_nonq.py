@@ -27,16 +27,19 @@ class Input(object):
         self._threads=threads
         self._lock=threading.Lock()
         self._runs=0
+        self._lock=threading.Lock()
     
-    def train_batch(self, BATCH_NUM, coord):
+    def train_batch(self, BATCH_NUM, coord=None):
         while True:
             if coord and coord.should_stop():
                 break
             if len(self._lab_queue) > BATCH_NUM:
-                temp = (self._img_queue[0:BATCH_NUM], self._lab_queue[0:BATCH_NUM])
-                self._img_queue=self._img_queue[BATCH_NUM:]
-                self._lab_queue=self._lab_queue[BATCH_NUM:]
-                return np.asarray(temp[0],dtype=np.float32), np.asarray(temp[1],dtype=np.int32)
+                with self._lock:
+                    images = self._img_queue[0:BATCH_NUM]
+                    labels = self._lab_queue[0:BATCH_NUM]
+                    self._img_queue=self._img_queue[BATCH_NUM:]
+                    self._lab_queue=self._lab_queue[BATCH_NUM:]
+                return np.asarray(images,dtype=np.float32), np.asarray(labels,dtype=np.int32)
             
     def _run(self, coord=None):
         if coord:
@@ -123,7 +126,4 @@ def augment(img, short=(256,481), crop=(224,224)):
     image = PIL2array(img)
     image = image-np.mean(image,axis=(0,1))    
     return image
-                 
-    
-    
-        
+                  

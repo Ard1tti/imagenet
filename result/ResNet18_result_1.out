@@ -1,0 +1,1069 @@
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcurand.so locally
+Training models.ResNet50_imagenet model
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:05:00.0
+Total memory: 11.25GiB
+Free memory: 10.81GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x9930d70
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 1 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:06:00.0
+Total memory: 11.25GiB
+Free memory: 11.06GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x9d49700
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 2 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:09:00.0
+Total memory: 11.25GiB
+Free memory: 11.06GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0xa163460
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 3 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:0a:00.0
+Total memory: 11.25GiB
+Free memory: 11.06GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0xa580cf0
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 4 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:84:00.0
+Total memory: 11.25GiB
+Free memory: 11.06GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0xa9a2060
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 5 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:85:00.0
+Total memory: 11.25GiB
+Free memory: 11.06GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0xadc6d50
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 6 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:88:00.0
+Total memory: 11.25GiB
+Free memory: 11.06GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0xb1ef9b0
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 7 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:89:00.0
+Total memory: 11.25GiB
+Free memory: 11.06GiB
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 0 to device ordinal 4
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 0 to device ordinal 5
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 0 to device ordinal 6
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 0 to device ordinal 7
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 1 to device ordinal 4
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 1 to device ordinal 5
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 1 to device ordinal 6
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 1 to device ordinal 7
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 2 to device ordinal 4
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 2 to device ordinal 5
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 2 to device ordinal 6
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 2 to device ordinal 7
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 3 to device ordinal 4
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 3 to device ordinal 5
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 3 to device ordinal 6
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 3 to device ordinal 7
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 4 to device ordinal 0
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 4 to device ordinal 1
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 4 to device ordinal 2
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 4 to device ordinal 3
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 5 to device ordinal 0
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 5 to device ordinal 1
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 5 to device ordinal 2
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 5 to device ordinal 3
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 6 to device ordinal 0
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 6 to device ordinal 1
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 6 to device ordinal 2
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 6 to device ordinal 3
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 7 to device ordinal 0
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 7 to device ordinal 1
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 7 to device ordinal 2
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 7 to device ordinal 3
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:126] DMA: 0 1 2 3 4 5 6 7 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 0:   Y Y Y Y N N N N 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 1:   Y Y Y Y N N N N 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 2:   Y Y Y Y N N N N 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 3:   Y Y Y Y N N N N 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 4:   N N N N Y Y Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 5:   N N N N Y Y Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 6:   N N N N Y Y Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 7:   N N N N Y Y Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:05:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:1) -> (device: 1, name: Tesla K80, pci bus id: 0000:06:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:2) -> (device: 2, name: Tesla K80, pci bus id: 0000:09:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:3) -> (device: 3, name: Tesla K80, pci bus id: 0000:0a:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:4) -> (device: 4, name: Tesla K80, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:5) -> (device: 5, name: Tesla K80, pci bus id: 0000:85:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:6) -> (device: 6, name: Tesla K80, pci bus id: 0000:88:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:7) -> (device: 7, name: Tesla K80, pci bus id: 0000:89:00.0)
+Variables are restored from ../../ckpt/models.ResNet50_imagenet/
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 10704 get requests, put_count=4954 evicted_count=1000 eviction_rate=0.201857 and unsatisfied allocation rate=0.639948
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 100 to 110
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 155 get requests, put_count=4166 evicted_count=4000 eviction_rate=0.960154 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 0 get requests, put_count=1013 evicted_count=1000 eviction_rate=0.987167 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 15 get requests, put_count=5029 evicted_count=5000 eviction_rate=0.994233 and unsatisfied allocation rate=0
+step 5, cross_entropy 6.90302
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 15 get requests, put_count=3032 evicted_count=3000 eviction_rate=0.989446 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 10689 get requests, put_count=10487 evicted_count=6000 eviction_rate=0.572137 and unsatisfied allocation rate=0.582
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 212 to 233
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 97 get requests, put_count=4120 evicted_count=4000 eviction_rate=0.970874 and unsatisfied allocation rate=0
+step 10, cross_entropy 6.87775
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 272 get requests, put_count=2300 evicted_count=2000 eviction_rate=0.869565 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 10788 get requests, put_count=10608 evicted_count=6000 eviction_rate=0.565611 and unsatisfied allocation rate=0.57564
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 339 to 372
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 99 get requests, put_count=4136 evicted_count=4000 eviction_rate=0.967118 and unsatisfied allocation rate=0
+step 15, cross_entropy 6.85041
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 55 get requests, put_count=1099 evicted_count=1000 eviction_rate=0.909918 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 55 get requests, put_count=2109 evicted_count=2000 eviction_rate=0.948317 and unsatisfied allocation rate=0
+step 20, cross_entropy 6.88137
+test accuracy 0.015625
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 10759 get requests, put_count=11390 evicted_count=6000 eviction_rate=0.526778 and unsatisfied allocation rate=0.504508
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 655 to 720
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 0 get requests, put_count=4072 evicted_count=4000 eviction_rate=0.982318 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 0 get requests, put_count=3087 evicted_count=3000 eviction_rate=0.971817 and unsatisfied allocation rate=0
+step 25, cross_entropy 6.86983
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 0 get requests, put_count=3105 evicted_count=3000 eviction_rate=0.966184 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 0 get requests, put_count=3127 evicted_count=3000 eviction_rate=0.959386 and unsatisfied allocation rate=0
+step 30, cross_entropy 6.86893
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 10704 get requests, put_count=9058 evicted_count=3000 eviction_rate=0.331199 and unsatisfied allocation rate=0.44843
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 1694 to 1863
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 0 get requests, put_count=1204 evicted_count=1000 eviction_rate=0.830565 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 0 get requests, put_count=3247 evicted_count=3000 eviction_rate=0.92393 and unsatisfied allocation rate=0
+step 35, cross_entropy 6.8292
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 10704 get requests, put_count=11188 evicted_count=3000 eviction_rate=0.268144 and unsatisfied allocation rate=0.265788
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 3625 to 3987
+step 40, cross_entropy 6.78454
+test accuracy 0.015625
+step 45, cross_entropy 6.84216
+step 50, cross_entropy 6.81625
+step 55, cross_entropy 6.85718
+step 60, cross_entropy 6.80105
+test accuracy 0.046875
+step 65, cross_entropy 6.84338
+step 70, cross_entropy 6.78422
+step 75, cross_entropy 6.7501
+step 80, cross_entropy 6.83663
+test accuracy 0.03125
+step 85, cross_entropy 6.80644
+step 90, cross_entropy 6.77627
+step 95, cross_entropy 6.80478
+step 100, cross_entropy 6.80869
+test accuracy 0.0195312
+step 105, cross_entropy 6.77797
+step 110, cross_entropy 6.78054
+step 115, cross_entropy 6.78451
+step 120, cross_entropy 6.79796
+test accuracy 0.0117188
+step 125, cross_entropy 6.72527
+step 130, cross_entropy 6.75774
+step 135, cross_entropy 6.74401
+step 140, cross_entropy 6.74803
+test accuracy 0.0195312
+step 145, cross_entropy 6.72178
+step 150, cross_entropy 6.73874
+step 155, cross_entropy 6.73747
+step 160, cross_entropy 6.68536
+test accuracy 0.0507812
+step 165, cross_entropy 6.62471
+step 170, cross_entropy 6.72036
+step 175, cross_entropy 6.62925
+step 180, cross_entropy 6.64961
+test accuracy 0.0625
+step 185, cross_entropy 6.74296
+step 190, cross_entropy 6.60138
+step 195, cross_entropy 6.67143
+step 200, cross_entropy 6.62926
+test accuracy 0.0429688
+step 205, cross_entropy 6.6647
+step 210, cross_entropy 6.60104
+step 215, cross_entropy 6.60388
+step 220, cross_entropy 6.57164
+test accuracy 0.0351562
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 1873200 get requests, put_count=1873764 evicted_count=2000 eviction_rate=0.00106737 and unsatisfied allocation rate=0.00107783
+step 225, cross_entropy 6.52466
+step 230, cross_entropy 6.57185
+step 235, cross_entropy 6.53648
+step 240, cross_entropy 6.55297
+test accuracy 0.0507812
+step 245, cross_entropy 6.57981
+step 250, cross_entropy 6.52835
+step 255, cross_entropy 6.51224
+step 260, cross_entropy 6.56885
+test accuracy 0.0585938
+step 265, cross_entropy 6.42845
+step 270, cross_entropy 6.45908
+step 275, cross_entropy 6.47189
+step 280, cross_entropy 6.43452
+test accuracy 0.0820312
+step 285, cross_entropy 6.49005
+step 290, cross_entropy 6.44299
+step 295, cross_entropy 6.40969
+step 300, cross_entropy 6.4323
+test accuracy 0.0585938
+step 305, cross_entropy 6.39563
+step 310, cross_entropy 6.42163
+step 315, cross_entropy 6.37144
+step 320, cross_entropy 6.41399
+test accuracy 0.0390625
+step 325, cross_entropy 6.44324
+step 330, cross_entropy 6.3827
+step 335, cross_entropy 6.34415
+step 340, cross_entropy 6.33839
+test accuracy 0.0507812
+step 345, cross_entropy 6.37382
+step 350, cross_entropy 6.37359
+step 355, cross_entropy 6.3765
+step 360, cross_entropy 6.32474
+test accuracy 0.0664062
+step 365, cross_entropy 6.2767
+step 370, cross_entropy 6.24061
+step 375, cross_entropy 6.2916
+step 380, cross_entropy 6.23764
+test accuracy 0.0351562
+step 385, cross_entropy 6.22673
+step 390, cross_entropy 6.25576
+step 395, cross_entropy 6.33
+step 400, cross_entropy 6.27539
+test accuracy 0.0429688
+step 405, cross_entropy 6.2302
+step 410, cross_entropy 6.23108
+step 415, cross_entropy 6.23882
+step 420, cross_entropy 6.23493
+test accuracy 0.0507812
+step 425, cross_entropy 6.1925
+step 430, cross_entropy 6.14287
+step 435, cross_entropy 6.11692
+step 440, cross_entropy 6.18966
+test accuracy 0.0625
+step 445, cross_entropy 6.2158
+step 450, cross_entropy 6.20801
+step 455, cross_entropy 6.23339
+step 460, cross_entropy 6.15799
+test accuracy 0.0585938
+step 465, cross_entropy 6.18341
+step 470, cross_entropy 6.14129
+step 475, cross_entropy 6.18915
+step 480, cross_entropy 6.10229
+test accuracy 0.03125
+step 485, cross_entropy 6.0881
+step 490, cross_entropy 6.10015
+step 495, cross_entropy 6.09203
+step 500, cross_entropy 6.06868
+test accuracy 0.0859375
+step 505, cross_entropy 6.08043
+step 510, cross_entropy 6.10366
+step 515, cross_entropy 6.13559
+step 520, cross_entropy 6.04678
+test accuracy 0.0820312
+step 525, cross_entropy 6.06034
+step 530, cross_entropy 6.03668
+step 535, cross_entropy 6.02586
+step 540, cross_entropy 6.08395
+test accuracy 0.0976562
+step 545, cross_entropy 5.98354
+step 550, cross_entropy 6.01244
+step 555, cross_entropy 5.98608
+step 560, cross_entropy 6.01141
+test accuracy 0.0820312
+step 565, cross_entropy 6.05365
+step 570, cross_entropy 6.03154
+step 575, cross_entropy 6.00791
+step 580, cross_entropy 5.98993
+test accuracy 0.09375
+step 585, cross_entropy 5.92855
+step 590, cross_entropy 5.94236
+step 595, cross_entropy 5.9437
+step 600, cross_entropy 5.96192
+test accuracy 0.0625
+step 605, cross_entropy 6.00275
+step 610, cross_entropy 5.91968
+step 615, cross_entropy 5.9593
+step 620, cross_entropy 5.93185
+test accuracy 0.148438
+step 625, cross_entropy 5.90855
+step 630, cross_entropy 5.88259
+step 635, cross_entropy 5.9333
+step 640, cross_entropy 5.90584
+test accuracy 0.09375
+step 645, cross_entropy 6.01498
+step 650, cross_entropy 6.02514
+step 655, cross_entropy 5.97219
+step 660, cross_entropy 5.96487
+test accuracy 0.101562
+step 665, cross_entropy 5.87382
+step 670, cross_entropy 5.78141
+step 675, cross_entropy 5.80967
+step 680, cross_entropy 5.79964
+test accuracy 0.0664062
+step 685, cross_entropy 5.91639
+step 690, cross_entropy 5.83185
+step 695, cross_entropy 5.86264
+step 700, cross_entropy 5.85117
+test accuracy 0.128906
+step 705, cross_entropy 5.82232
+step 710, cross_entropy 5.86164
+step 715, cross_entropy 5.89272
+step 720, cross_entropy 5.85047
+test accuracy 0.0664062
+step 725, cross_entropy 5.85502
+step 730, cross_entropy 5.8894
+step 735, cross_entropy 5.87962
+step 740, cross_entropy 5.76714
+test accuracy 0.109375
+step 745, cross_entropy 5.78159
+step 750, cross_entropy 5.75395
+step 755, cross_entropy 5.72922
+step 760, cross_entropy 5.79592
+test accuracy 0.113281
+step 765, cross_entropy 5.82127
+step 770, cross_entropy 5.72757
+step 775, cross_entropy 5.70833
+step 780, cross_entropy 5.78123
+test accuracy 0.121094
+step 785, cross_entropy 5.71786
+step 790, cross_entropy 5.76006
+step 795, cross_entropy 5.70006
+step 800, cross_entropy 5.70377
+test accuracy 0.0546875
+step 805, cross_entropy 5.78083
+step 810, cross_entropy 5.64127
+step 815, cross_entropy 5.73365
+step 820, cross_entropy 5.71912
+test accuracy 0.113281
+step 825, cross_entropy 5.80305
+step 830, cross_entropy 5.58632
+step 835, cross_entropy 5.77085
+step 840, cross_entropy 5.60713
+test accuracy 0.125
+step 845, cross_entropy 5.74319
+step 850, cross_entropy 5.75008
+step 855, cross_entropy 5.63426
+step 860, cross_entropy 5.64162
+test accuracy 0.101562
+step 865, cross_entropy 5.6983
+step 870, cross_entropy 5.71314
+step 875, cross_entropy 5.58202
+step 880, cross_entropy 5.6535
+test accuracy 0.125
+step 885, cross_entropy 5.61143
+step 890, cross_entropy 5.67099
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 9044880 get requests, put_count=9045435 evicted_count=12000 eviction_rate=0.00132664 and unsatisfied allocation rate=0.00132981
+step 895, cross_entropy 5.64315
+step 900, cross_entropy 5.65063
+test accuracy 0.0742188
+step 905, cross_entropy 5.65444
+step 910, cross_entropy 5.63399
+step 915, cross_entropy 5.56976
+step 920, cross_entropy 5.59908
+test accuracy 0.0976562
+step 925, cross_entropy 5.63522
+step 930, cross_entropy 5.57463
+step 935, cross_entropy 5.57322
+step 940, cross_entropy 5.50545
+test accuracy 0.0898438
+step 945, cross_entropy 5.56161
+step 950, cross_entropy 5.54152
+step 955, cross_entropy 5.60207
+step 960, cross_entropy 5.628
+test accuracy 0.136719
+step 965, cross_entropy 5.53752
+step 970, cross_entropy 5.51327
+step 975, cross_entropy 5.52792
+step 980, cross_entropy 5.62128
+test accuracy 0.1875
+step 985, cross_entropy 5.49426
+step 990, cross_entropy 5.46246
+step 995, cross_entropy 5.49317
+step 1000, cross_entropy 5.50015
+test accuracy 0.15625
+step 1005, cross_entropy 5.50813
+step 1010, cross_entropy 5.52113
+step 1015, cross_entropy 5.4615
+step 1020, cross_entropy 5.43242
+test accuracy 0.207031
+step 1025, cross_entropy 5.5006
+step 1030, cross_entropy 5.5236
+step 1035, cross_entropy 5.40435
+step 1040, cross_entropy 5.51686
+test accuracy 0.171875
+step 1045, cross_entropy 5.47913
+step 1050, cross_entropy 5.48485
+step 1055, cross_entropy 5.44245
+step 1060, cross_entropy 5.50989
+test accuracy 0.132812
+step 1065, cross_entropy 5.47605
+step 1070, cross_entropy 5.57822
+step 1075, cross_entropy 5.44028
+step 1080, cross_entropy 5.4277
+test accuracy 0.078125
+step 1085, cross_entropy 5.34862
+step 1090, cross_entropy 5.43268
+step 1095, cross_entropy 5.54798
+step 1100, cross_entropy 5.32727
+test accuracy 0.164062
+step 1105, cross_entropy 5.50435
+step 1110, cross_entropy 5.44982
+step 1115, cross_entropy 5.41532
+step 1120, cross_entropy 5.40091
+test accuracy 0.136719
+step 1125, cross_entropy 5.35406
+step 1130, cross_entropy 5.48637
+step 1135, cross_entropy 5.29287
+step 1140, cross_entropy 5.34183
+test accuracy 0.21875
+step 1145, cross_entropy 5.44417
+step 1150, cross_entropy 5.42455
+step 1155, cross_entropy 5.37402
+step 1160, cross_entropy 5.38127
+test accuracy 0.1875
+step 1165, cross_entropy 5.2755
+step 1170, cross_entropy 5.34963
+step 1175, cross_entropy 5.39277
+step 1180, cross_entropy 5.36662
+test accuracy 0.144531
+step 1185, cross_entropy 5.39906
+step 1190, cross_entropy 5.38475
+step 1195, cross_entropy 5.33043
+step 1200, cross_entropy 5.34853
+test accuracy 0.160156
+step 1205, cross_entropy 5.29184
+step 1210, cross_entropy 5.33754
+step 1215, cross_entropy 5.43458
+step 1220, cross_entropy 5.27524
+test accuracy 0.195312
+step 1225, cross_entropy 5.4251
+step 1230, cross_entropy 5.36292
+step 1235, cross_entropy 5.40735
+step 1240, cross_entropy 5.33968
+test accuracy 0.230469
+step 1245, cross_entropy 5.21381
+step 1250, cross_entropy 5.35632
+step 1255, cross_entropy 5.36588
+step 1260, cross_entropy 5.27701
+test accuracy 0.203125
+step 1265, cross_entropy 5.29769
+step 1270, cross_entropy 5.2722
+step 1275, cross_entropy 5.29136
+step 1280, cross_entropy 5.18605
+test accuracy 0.238281
+step 1285, cross_entropy 5.29357
+step 1290, cross_entropy 5.2788
+step 1295, cross_entropy 5.16231
+step 1300, cross_entropy 5.33382
+test accuracy 0.257812
+step 1305, cross_entropy 5.32446
+step 1310, cross_entropy 5.30718
+step 1315, cross_entropy 5.29459
+step 1320, cross_entropy 5.24836
+test accuracy 0.230469
+step 1325, cross_entropy 5.24183
+step 1330, cross_entropy 5.27779
+step 1335, cross_entropy 5.27599
+step 1340, cross_entropy 5.19567
+test accuracy 0.164062
+step 1345, cross_entropy 5.25665
+step 1350, cross_entropy 5.25503
+step 1355, cross_entropy 5.27685
+step 1360, cross_entropy 5.19967
+test accuracy 0.105469
+step 1365, cross_entropy 5.35575
+step 1370, cross_entropy 5.12955
+step 1375, cross_entropy 5.14953
+step 1380, cross_entropy 5.1964
+test accuracy 0.265625
+step 1385, cross_entropy 5.16708
+step 1390, cross_entropy 5.1539
+step 1395, cross_entropy 5.15435
+step 1400, cross_entropy 5.10414
+test accuracy 0.1875
+step 1405, cross_entropy 5.18665
+step 1410, cross_entropy 5.14502
+step 1415, cross_entropy 5.20719
+step 1420, cross_entropy 5.06543
+test accuracy 0.269531
+step 1425, cross_entropy 5.1707
+step 1430, cross_entropy 5.18852
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 14846448 get requests, put_count=14847046 evicted_count=22000 eviction_rate=0.00148178 and unsatisfied allocation rate=0.00148083
+step 1435, cross_entropy 5.11357
+step 1440, cross_entropy 5.07103
+test accuracy 0.199219
+step 1445, cross_entropy 5.09544
+step 1450, cross_entropy 5.1944
+step 1455, cross_entropy 5.10473
+step 1460, cross_entropy 5.08195
+test accuracy 0.136719
+step 1465, cross_entropy 5.12967
+step 1470, cross_entropy 5.14639
+step 1475, cross_entropy 5.1824
+step 1480, cross_entropy 5.08479
+test accuracy 0.296875
+step 1485, cross_entropy 5.09631
+step 1490, cross_entropy 5.12193
+step 1495, cross_entropy 5.09157
+step 1500, cross_entropy 5.02417
+test accuracy 0.257812
+step 1505, cross_entropy 5.11702
+step 1510, cross_entropy 5.15037
+step 1515, cross_entropy 5.2804
+step 1520, cross_entropy 5.14107
+test accuracy 0.214844
+step 1525, cross_entropy 5.068
+step 1530, cross_entropy 5.00846
+step 1535, cross_entropy 5.04389
+step 1540, cross_entropy 5.00268
+test accuracy 0.253906
+step 1545, cross_entropy 5.11138
+step 1550, cross_entropy 5.03449
+step 1555, cross_entropy 5.08847
+step 1560, cross_entropy 5.05553
+test accuracy 0.28125
+step 1565, cross_entropy 5.1439
+step 1570, cross_entropy 5.06196
+step 1575, cross_entropy 5.01198
+step 1580, cross_entropy 5.01729
+test accuracy 0.28125
+step 1585, cross_entropy 5.11607
+step 1590, cross_entropy 4.97724
+step 1595, cross_entropy 5.02997
+step 1600, cross_entropy 5.10721
+test accuracy 0.269531
+step 1605, cross_entropy 5.06482
+step 1610, cross_entropy 5.10848
+step 1615, cross_entropy 4.9608
+step 1620, cross_entropy 4.92375
+test accuracy 0.0976562
+step 1625, cross_entropy 5.06234
+step 1630, cross_entropy 5.0074
+step 1635, cross_entropy 5.0403
+step 1640, cross_entropy 4.98933
+test accuracy 0.00390625
+step 1645, cross_entropy 5.10421
+step 1650, cross_entropy 5.15927
+step 1655, cross_entropy 5.05831
+step 1660, cross_entropy 5.046
+test accuracy 0.0078125
+step 1665, cross_entropy 4.99259
+step 1670, cross_entropy 4.95034
+step 1675, cross_entropy 4.93724
+step 1680, cross_entropy 5.06329
+test accuracy 0.0078125
+step 1685, cross_entropy 5.00854
+step 1690, cross_entropy 5.05651
+step 1695, cross_entropy 4.97284
+step 1700, cross_entropy 5.00515
+test accuracy 0
+step 1705, cross_entropy 4.99645
+step 1710, cross_entropy 5.00264
+step 1715, cross_entropy 4.8634
+step 1720, cross_entropy 4.88657
+test accuracy 0
+step 1725, cross_entropy 5.14378
+step 1730, cross_entropy 5.00007
+step 1735, cross_entropy 4.91526
+step 1740, cross_entropy 4.93913
+test accuracy 0.015625
+step 1745, cross_entropy 4.84064
+step 1750, cross_entropy 5.03183
+step 1755, cross_entropy 4.97849
+step 1760, cross_entropy 4.95201
+test accuracy 0
+step 1765, cross_entropy 4.9418
+step 1770, cross_entropy 4.93554
+step 1775, cross_entropy 4.93203
+step 1780, cross_entropy 4.9151
+test accuracy 0
+step 1785, cross_entropy 4.88494
+step 1790, cross_entropy 4.87309
+step 1795, cross_entropy 4.87907
+step 1800, cross_entropy 4.84939
+test accuracy 0.00390625
+step 1805, cross_entropy 4.86193
+step 1810, cross_entropy 4.89618
+step 1815, cross_entropy 4.88718
+step 1820, cross_entropy 4.8658
+test accuracy 0.0078125
+step 1825, cross_entropy 4.88624
+step 1830, cross_entropy 4.86717
+step 1835, cross_entropy 4.76702
+step 1840, cross_entropy 4.86125
+test accuracy 0.00390625
+step 1845, cross_entropy 4.83681
+step 1850, cross_entropy 4.81299
+step 1855, cross_entropy 4.8083
+step 1860, cross_entropy 4.84315
+test accuracy 0.00390625
+step 1865, cross_entropy 5.00269
+step 1870, cross_entropy 4.82925
+step 1875, cross_entropy 4.77543
+step 1880, cross_entropy 4.88362
+test accuracy 0.0078125
+step 1885, cross_entropy 4.845
+step 1890, cross_entropy 4.72156
+step 1895, cross_entropy 4.82735
+step 1900, cross_entropy 4.82704
+test accuracy 0
+step 1905, cross_entropy 4.82705
+step 1910, cross_entropy 4.87482
+step 1915, cross_entropy 4.91872
+step 1920, cross_entropy 4.90813
+test accuracy 0.0078125
+step 1925, cross_entropy 4.79977
+step 1930, cross_entropy 4.88763
+step 1935, cross_entropy 4.82588
+step 1940, cross_entropy 4.84197
+test accuracy 0.0078125
+step 1945, cross_entropy 4.8668
+step 1950, cross_entropy 4.87783
+step 1955, cross_entropy 4.77866
+step 1960, cross_entropy 4.80464
+test accuracy 0
+step 1965, cross_entropy 4.86214
+step 1970, cross_entropy 4.75175
+step 1975, cross_entropy 4.84231
+step 1980, cross_entropy 4.91223
+test accuracy 0.0078125
+step 1985, cross_entropy 4.75579
+step 1990, cross_entropy 4.80325
+step 1995, cross_entropy 4.82517
+step 2000, cross_entropy 4.7923
+test accuracy 0
+Model saved in ../../ckpt/models.ResNet50_imagenet/
+step 2005, cross_entropy 4.88112
+step 2010, cross_entropy 4.76039
+step 2015, cross_entropy 4.91087
+step 2020, cross_entropy 4.72494
+test accuracy 0.00390625
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 21129696 get requests, put_count=21130251 evicted_count=32000 eviction_rate=0.00151442 and unsatisfied allocation rate=0.00151578
+step 2025, cross_entropy 4.76591
+step 2030, cross_entropy 4.77496
+step 2035, cross_entropy 4.82496
+step 2040, cross_entropy 4.66028
+test accuracy 0.00390625
+step 2045, cross_entropy 4.72998
+step 2050, cross_entropy 4.80758
+step 2055, cross_entropy 4.68706
+step 2060, cross_entropy 4.69572
+test accuracy 0
+step 2065, cross_entropy 4.72577
+step 2070, cross_entropy 4.76152
+step 2075, cross_entropy 4.74602
+step 2080, cross_entropy 4.7133
+test accuracy 0.00390625
+step 2085, cross_entropy 4.79552
+step 2090, cross_entropy 4.87515
+step 2095, cross_entropy 4.8116
+step 2100, cross_entropy 4.81223
+test accuracy 0
+step 2105, cross_entropy 4.79616
+step 2110, cross_entropy 4.78252
+step 2115, cross_entropy 4.72644
+step 2120, cross_entropy 4.68779
+test accuracy 0.0117188
+step 2125, cross_entropy 4.80196
+step 2130, cross_entropy 4.72243
+step 2135, cross_entropy 4.7096
+step 2140, cross_entropy 4.62042
+test accuracy 0.0117188
+step 2145, cross_entropy 4.79155
+step 2150, cross_entropy 4.75349
+step 2155, cross_entropy 4.7406
+step 2160, cross_entropy 4.72998
+test accuracy 0
+step 2165, cross_entropy 4.68337
+step 2170, cross_entropy 4.75967
+step 2175, cross_entropy 4.81037
+step 2180, cross_entropy 4.60663
+test accuracy 0.0078125
+step 2185, cross_entropy 4.66399
+step 2190, cross_entropy 4.65727
+step 2195, cross_entropy 4.63705
+step 2200, cross_entropy 4.78275
+test accuracy 0.00390625
+step 2205, cross_entropy 4.74797
+step 2210, cross_entropy 4.8281
+step 2215, cross_entropy 4.73099
+step 2220, cross_entropy 4.64146
+test accuracy 0.0078125
+step 2225, cross_entropy 4.60322
+step 2230, cross_entropy 4.78743
+step 2235, cross_entropy 4.61896
+step 2240, cross_entropy 4.62358
+test accuracy 0
+step 2245, cross_entropy 4.73443
+step 2250, cross_entropy 4.59603
+step 2255, cross_entropy 4.71235
+step 2260, cross_entropy 4.65014
+test accuracy 0.0078125
+step 2265, cross_entropy 4.59371
+step 2270, cross_entropy 4.58582
+step 2275, cross_entropy 4.65658
+step 2280, cross_entropy 4.72309
+test accuracy 0
+step 2285, cross_entropy 4.6821
+step 2290, cross_entropy 4.54304
+step 2295, cross_entropy 4.76061
+step 2300, cross_entropy 4.67297
+test accuracy 0.00390625
+step 2305, cross_entropy 4.53673
+step 2310, cross_entropy 4.69424
+step 2315, cross_entropy 4.58744
+step 2320, cross_entropy 4.67118
+test accuracy 0.0078125
+step 2325, cross_entropy 4.66525
+step 2330, cross_entropy 4.63947
+step 2335, cross_entropy 4.61817
+step 2340, cross_entropy 4.57475
+test accuracy 0
+step 2345, cross_entropy 4.51873
+step 2350, cross_entropy 4.61534
+step 2355, cross_entropy 4.63559
+step 2360, cross_entropy 4.55593
+test accuracy 0.0117188
+step 2365, cross_entropy 4.657
+step 2370, cross_entropy 4.54519
+step 2375, cross_entropy 4.58802
+step 2380, cross_entropy 4.64906
+test accuracy 0.0078125
+step 2385, cross_entropy 4.64057
+step 2390, cross_entropy 4.6043
+step 2395, cross_entropy 4.58031
+step 2400, cross_entropy 4.46736
+test accuracy 0.00390625
+step 2405, cross_entropy 4.55834
+step 2410, cross_entropy 4.76383
+step 2415, cross_entropy 4.55031
+step 2420, cross_entropy 4.55271
+test accuracy 0.0078125
+step 2425, cross_entropy 4.50072
+step 2430, cross_entropy 4.68133
+step 2435, cross_entropy 4.52045
+step 2440, cross_entropy 4.56935
+test accuracy 0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 25657488 get requests, put_count=25658013 evicted_count=42000 eviction_rate=0.00163692 and unsatisfied allocation rate=0.00163921
+step 2445, cross_entropy 4.54907
+step 2450, cross_entropy 4.54648
+step 2455, cross_entropy 4.52299
+step 2460, cross_entropy 4.56161
+test accuracy 0.0117188
+step 2465, cross_entropy 4.65721
+step 2470, cross_entropy 4.50564
+step 2475, cross_entropy 4.41354
+step 2480, cross_entropy 4.61836
+test accuracy 0.00390625
+step 2485, cross_entropy 4.6691
+step 2490, cross_entropy 4.60179
+step 2495, cross_entropy 4.5075
+step 2500, cross_entropy 4.601
+test accuracy 0.0078125
+step 2505, cross_entropy 4.45939
+step 2510, cross_entropy 4.52945
+step 2515, cross_entropy 4.50375
+step 2520, cross_entropy 4.65691
+test accuracy 0.0078125
+step 2525, cross_entropy 4.52551
+step 2530, cross_entropy 4.56469
+step 2535, cross_entropy 4.58371
+step 2540, cross_entropy 4.57751
+test accuracy 0
+step 2545, cross_entropy 4.56786
+step 2550, cross_entropy 4.48817
+step 2555, cross_entropy 4.44129
+step 2560, cross_entropy 4.44788
+test accuracy 0
+step 2565, cross_entropy 4.60846
+step 2570, cross_entropy 4.49987
+step 2575, cross_entropy 4.49457
+step 2580, cross_entropy 4.41483
+test accuracy 0.0078125
+step 2585, cross_entropy 4.52757
+step 2590, cross_entropy 4.52386
+step 2595, cross_entropy 4.41076
+step 2600, cross_entropy 4.60943
+test accuracy 0
+step 2605, cross_entropy 4.54909
+step 2610, cross_entropy 4.41
+step 2615, cross_entropy 4.44106
+step 2620, cross_entropy 4.41903
+test accuracy 0.0117188
+step 2625, cross_entropy 4.45307
+step 2630, cross_entropy 4.58852
+step 2635, cross_entropy 4.45139
+step 2640, cross_entropy 4.53951
+test accuracy 0.00390625
+step 2645, cross_entropy 4.51837
+step 2650, cross_entropy 4.48511
+step 2655, cross_entropy 4.45543
+step 2660, cross_entropy 4.51743
+test accuracy 0.0078125
+step 2665, cross_entropy 4.46494
+step 2670, cross_entropy 4.60523
+step 2675, cross_entropy 4.60306
+step 2680, cross_entropy 4.46763
+test accuracy 0.00390625
+step 2685, cross_entropy 4.47921
+step 2690, cross_entropy 4.52449
+step 2695, cross_entropy 4.50229
+step 2700, cross_entropy 4.36699
+test accuracy 0.0078125
+step 2705, cross_entropy 4.48041
+step 2710, cross_entropy 4.47753
+step 2715, cross_entropy 4.54111
+step 2720, cross_entropy 4.50956
+test accuracy 0.00390625
+step 2725, cross_entropy 4.47628
+step 2730, cross_entropy 4.39568
+step 2735, cross_entropy 4.47974
+step 2740, cross_entropy 4.47642
+test accuracy 0.0078125
+step 2745, cross_entropy 4.30394
+step 2750, cross_entropy 4.48177
+step 2755, cross_entropy 4.39188
+step 2760, cross_entropy 4.34591
+test accuracy 0.0078125
+step 2765, cross_entropy 4.39362
+step 2770, cross_entropy 4.49635
+step 2775, cross_entropy 4.36986
+step 2780, cross_entropy 4.42197
+test accuracy 0.0078125
+step 2785, cross_entropy 4.54402
+step 2790, cross_entropy 4.47558
+step 2795, cross_entropy 4.44177
+step 2800, cross_entropy 4.41705
+test accuracy 0.0117188
+step 2805, cross_entropy 4.37055
+step 2810, cross_entropy 4.55766
+step 2815, cross_entropy 4.36563
+step 2820, cross_entropy 4.45699
+test accuracy 0.0117188
+step 2825, cross_entropy 4.57428
+step 2830, cross_entropy 4.41753
+step 2835, cross_entropy 4.42277
+step 2840, cross_entropy 4.40971
+test accuracy 0
+step 2845, cross_entropy 4.39451
+step 2850, cross_entropy 4.40367
+step 2855, cross_entropy 4.39546
+step 2860, cross_entropy 4.42427
+test accuracy 0.0078125
+step 2865, cross_entropy 4.38487
+step 2870, cross_entropy 4.44856
+step 2875, cross_entropy 4.33822
+step 2880, cross_entropy 4.39839
+test accuracy 0.00390625
+step 2885, cross_entropy 4.3695
+step 2890, cross_entropy 4.44626
+step 2895, cross_entropy 4.28515
+step 2900, cross_entropy 4.39983
+test accuracy 0.0078125
+step 2905, cross_entropy 4.43116
+step 2910, cross_entropy 4.47171
+step 2915, cross_entropy 4.4197
+step 2920, cross_entropy 4.37833
+test accuracy 0
+step 2925, cross_entropy 4.45058
+step 2930, cross_entropy 4.41177
+step 2935, cross_entropy 4.36631
+step 2940, cross_entropy 4.43427
+test accuracy 0
+step 2945, cross_entropy 4.38214
+step 2950, cross_entropy 4.4616
+step 2955, cross_entropy 4.48351
+step 2960, cross_entropy 4.34847
+test accuracy 0.0195312
+step 2965, cross_entropy 4.36765
+step 2970, cross_entropy 4.37423
+step 2975, cross_entropy 4.34049
+step 2980, cross_entropy 4.38255
+test accuracy 0.00390625
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 31437648 get requests, put_count=31438290 evicted_count=52000 eviction_rate=0.00165403 and unsatisfied allocation rate=0.00165219
+step 2985, cross_entropy 4.34248
+step 2990, cross_entropy 4.33562
+step 2995, cross_entropy 4.4206
+step 3000, cross_entropy 4.32928
+test accuracy 0
+step 3005, cross_entropy 4.36629
+step 3010, cross_entropy 4.35327
+step 3015, cross_entropy 4.37756
+step 3020, cross_entropy 4.45131
+test accuracy 0.0117188
+step 3025, cross_entropy 4.24711
+step 3030, cross_entropy 4.45529
+step 3035, cross_entropy 4.42121
+step 3040, cross_entropy 4.37187
+test accuracy 0.0078125
+step 3045, cross_entropy 4.31724
+step 3050, cross_entropy 4.43076
+step 3055, cross_entropy 4.42142
+step 3060, cross_entropy 4.32558
+test accuracy 0
+step 3065, cross_entropy 4.25837
+step 3070, cross_entropy 4.26239
+step 3075, cross_entropy 4.39905
+step 3080, cross_entropy 4.37017
+test accuracy 0.0078125
+step 3085, cross_entropy 4.38532
+step 3090, cross_entropy 4.2435
+step 3095, cross_entropy 4.44039
+step 3100, cross_entropy 4.35703
+test accuracy 0
+step 3105, cross_entropy 4.38544
+step 3110, cross_entropy 4.39565
+step 3115, cross_entropy 4.38247
+step 3120, cross_entropy 4.28815
+test accuracy 0.0195312
+step 3125, cross_entropy 4.37154
+step 3130, cross_entropy 4.32658
+step 3135, cross_entropy 4.28464
+step 3140, cross_entropy 4.28686
+test accuracy 0.00390625
+step 3145, cross_entropy 4.35698
+step 3150, cross_entropy 4.1691
+step 3155, cross_entropy 4.2262
+step 3160, cross_entropy 4.39773
+test accuracy 0
+step 3165, cross_entropy 4.28676
+step 3170, cross_entropy 4.19583
+step 3175, cross_entropy 4.27383
+step 3180, cross_entropy 4.27095
+test accuracy 0
+step 3185, cross_entropy 4.22434
+step 3190, cross_entropy 4.232
+step 3195, cross_entropy 4.33522
+step 3200, cross_entropy 4.323
+test accuracy 0
+step 3205, cross_entropy 4.25729
+step 3210, cross_entropy 4.29406
+step 3215, cross_entropy 4.16029
+step 3220, cross_entropy 4.21041
+test accuracy 0.0078125
+step 3225, cross_entropy 4.31545
+step 3230, cross_entropy 4.38409
+step 3235, cross_entropy 4.23304
+step 3240, cross_entropy 4.29259
+test accuracy 0.00390625
+step 3245, cross_entropy 4.26171
+step 3250, cross_entropy 4.32003
+step 3255, cross_entropy 4.21184
+step 3260, cross_entropy 4.33461
+test accuracy 0.0078125
+step 3265, cross_entropy 4.26337
+step 3270, cross_entropy 4.22949
+step 3275, cross_entropy 4.27342
+step 3280, cross_entropy 4.23239
+test accuracy 0
+step 3285, cross_entropy 4.31903
+step 3290, cross_entropy 4.20515
+step 3295, cross_entropy 4.34017
+step 3300, cross_entropy 4.32768
+test accuracy 0
+step 3305, cross_entropy 4.22547
+step 3310, cross_entropy 4.34597
+step 3315, cross_entropy 4.31079
+step 3320, cross_entropy 4.12178
+test accuracy 0.0078125
+step 3325, cross_entropy 4.33149
+step 3330, cross_entropy 4.26068
+step 3335, cross_entropy 4.1566
+step 3340, cross_entropy 4.22918
+test accuracy 0.0117188
+step 3345, cross_entropy 4.3031
+step 3350, cross_entropy 4.13535
+step 3355, cross_entropy 4.26837
+step 3360, cross_entropy 4.27454
+test accuracy 0
+step 3365, cross_entropy 4.26391
+step 3370, cross_entropy 4.18972
+step 3375, cross_entropy 4.17692
+step 3380, cross_entropy 4.30908
+test accuracy 0
+step 3385, cross_entropy 4.23075
+step 3390, cross_entropy 4.09671
+step 3395, cross_entropy 4.26207
+step 3400, cross_entropy 4.27539
+test accuracy 0
+step 3405, cross_entropy 4.22002
+step 3410, cross_entropy 4.17276
+step 3415, cross_entropy 4.26882
+step 3420, cross_entropy 4.23448
+test accuracy 0.015625
+step 3425, cross_entropy 4.18309
+step 3430, cross_entropy 4.32026
+step 3435, cross_entropy 4.16528
+step 3440, cross_entropy 4.16285
+test accuracy 0.0078125
+step 3445, cross_entropy 4.20104
+step 3450, cross_entropy 4.27469
+step 3455, cross_entropy 4.15587
+step 3460, cross_entropy 4.19785
+test accuracy 0.00390625
+step 3465, cross_entropy 4.26149
+step 3470, cross_entropy 4.16196
+step 3475, cross_entropy 4.16791
+step 3480, cross_entropy 4.19914
+test accuracy 0
+step 3485, cross_entropy 4.23889
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 36853872 get requests, put_count=36854488 evicted_count=62000 eviction_rate=0.00168229 and unsatisfied allocation rate=0.00168142
+step 3490, cross_entropy 4.21903
+step 3495, cross_entropy 4.19921
+step 3500, cross_entropy 4.23493
+test accuracy 0
+step 3505, cross_entropy 4.11847
+step 3510, cross_entropy 4.26101
+step 3515, cross_entropy 4.09403
+step 3520, cross_entropy 4.09465
+test accuracy 0
+step 3525, cross_entropy 4.08377
+step 3530, cross_entropy 4.12024
+step 3535, cross_entropy 4.2613
+step 3540, cross_entropy 4.2028
+test accuracy 0
+step 3545, cross_entropy 4.20932
+step 3550, cross_entropy 4.17206
+step 3555, cross_entropy 4.11795
+step 3560, cross_entropy 4.40106
+test accuracy 0
+step 3565, cross_entropy 4.21926
+step 3570, cross_entropy 4.12444
+step 3575, cross_entropy 4.23358
+step 3580, cross_entropy 4.13789
+test accuracy 0.00390625
+step 3585, cross_entropy 4.20776
+step 3590, cross_entropy 4.2371
+step 3595, cross_entropy 4.11525
+Model saved in ../../ckpt/models.ResNet50_imagenet/
+Traceback (most recent call last):
+  File "imagenet_train_no_val.py", line 180, in <module>
+    tf.app.run()
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/platform/app.py", line 30, in run
+    sys.exit(main(sys.argv))
+  File "imagenet_train_no_val.py", line 177, in main
+    train()
+  File "imagenet_train_no_val.py", line 137, in train
+    img_batch, lab_batch = train_data.train_batch(BATCH_SIZE, coord)
+  File "/home/blueconet/tensorflow/imagenet/src/py/imagenet_input_nq.py", line 49, in train_batch
+    images=[self.augment(image) for image in images]
+  File "/home/blueconet/tensorflow/imagenet/src/py/imagenet_input_nq.py", line 110, in augment
+    image=self.random_flip(image)
+  File "/home/blueconet/tensorflow/imagenet/src/py/imagenet_input_nq.py", line 138, in random_flip
+    img=Image.fromarray(image,"RGB")
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 1948, in fromarray
+    return frombuffer(mode, size, obj, "raw", rawmode, 0, 1)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 1899, in frombuffer
+    return frombytes(mode, size, data, decoder_name, args)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 1824, in frombytes
+    im = new(mode, size)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 1790, in new
+    return Image()._new(core.fill(mode, size, color))
+KeyboardInterrupt

@@ -3,56 +3,56 @@ I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library
 I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcufft.so locally
 I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcuda.so.1 locally
 I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcurand.so locally
-Training ResNet_imagenet model
+Training models.ResNet50_imagenet model
 I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 0 with properties: 
 name: Tesla K80
 major: 3 minor: 7 memoryClockRate (GHz) 0.8235
 pciBusID 0000:05:00.0
 Total memory: 11.25GiB
 Free memory: 11.13GiB
-W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x6dcc830
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0xa4029d0
 I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 1 with properties: 
 name: Tesla K80
 major: 3 minor: 7 memoryClockRate (GHz) 0.8235
 pciBusID 0000:06:00.0
 Total memory: 11.25GiB
 Free memory: 11.13GiB
-W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x71df240
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0xa81b280
 I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 2 with properties: 
 name: Tesla K80
 major: 3 minor: 7 memoryClockRate (GHz) 0.8235
 pciBusID 0000:09:00.0
 Total memory: 11.25GiB
 Free memory: 11.13GiB
-W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x75f6170
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0xac35100
 I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 3 with properties: 
 name: Tesla K80
 major: 3 minor: 7 memoryClockRate (GHz) 0.8235
 pciBusID 0000:0a:00.0
 Total memory: 11.25GiB
 Free memory: 11.13GiB
-W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x7a13970
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0xb0527e0
 I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 4 with properties: 
 name: Tesla K80
 major: 3 minor: 7 memoryClockRate (GHz) 0.8235
 pciBusID 0000:84:00.0
 Total memory: 11.25GiB
 Free memory: 11.13GiB
-W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x7e34ce0
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0xb473be0
 I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 5 with properties: 
 name: Tesla K80
 major: 3 minor: 7 memoryClockRate (GHz) 0.8235
 pciBusID 0000:85:00.0
 Total memory: 11.25GiB
 Free memory: 11.13GiB
-W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x8259c10
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0xb898a80
 I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 6 with properties: 
 name: Tesla K80
 major: 3 minor: 7 memoryClockRate (GHz) 0.8235
 pciBusID 0000:88:00.0
 Total memory: 11.25GiB
 Free memory: 11.13GiB
-W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x8682990
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0xbcc1800
 I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 7 with properties: 
 name: Tesla K80
 major: 3 minor: 7 memoryClockRate (GHz) 0.8235
@@ -108,66 +108,140 @@ I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow devi
 I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:5) -> (device: 5, name: Tesla K80, pci bus id: 0000:85:00.0)
 I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:6) -> (device: 6, name: Tesla K80, pci bus id: 0000:88:00.0)
 I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:7) -> (device: 7, name: Tesla K80, pci bus id: 0000:89:00.0)
-Variables are restored from ../../ckpt/ResNet_imagenet/
-I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 1912 get requests, put_count=1621 evicted_count=1000 eviction_rate=0.616903 and unsatisfied allocation rate=0.72751
+Variables are initialized
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 10704 get requests, put_count=4954 evicted_count=1000 eviction_rate=0.201857 and unsatisfied allocation rate=0.639948
 I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 100 to 110
-step 5, cross_entropy 11.4351
-I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 0 get requests, put_count=1021 evicted_count=1000 eviction_rate=0.979432 and unsatisfied allocation rate=0
-step 10, cross_entropy 11.2054
-step 15, cross_entropy 10.9824
-I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 1912 get requests, put_count=2110 evicted_count=1000 eviction_rate=0.473934 and unsatisfied allocation rate=0.445084
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 232 get requests, put_count=4243 evicted_count=4000 eviction_rate=0.942729 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 55 get requests, put_count=1068 evicted_count=1000 eviction_rate=0.93633 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 1 get requests, put_count=5015 evicted_count=5000 eviction_rate=0.997009 and unsatisfied allocation rate=0
+step 5, cross_entropy 7.35495
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 17 get requests, put_count=3034 evicted_count=3000 eviction_rate=0.988794 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 10718 get requests, put_count=11530 evicted_count=7000 eviction_rate=0.607112 and unsatisfied allocation rate=0.579119
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 212 to 233
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 1 get requests, put_count=4024 evicted_count=4000 eviction_rate=0.994036 and unsatisfied allocation rate=0
+step 10, cross_entropy 7.4745
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 15 get requests, put_count=2045 evicted_count=2000 eviction_rate=0.977995 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 0 get requests, put_count=1037 evicted_count=1000 eviction_rate=0.96432 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 0 get requests, put_count=5040 evicted_count=5000 eviction_rate=0.992063 and unsatisfied allocation rate=0
+step 15, cross_entropy 7.43656
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 10688 get requests, put_count=8846 evicted_count=4000 eviction_rate=0.452182 and unsatisfied allocation rate=0.551179
 I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 542 to 596
-step 20, cross_entropy 10.7984
-test accuracy 0.00390625
-step 25, cross_entropy 10.586
-Enter username for www.bahamaclothes.com at www.bahamaclothes.com: Enter username for www.bahamaclothes.com at www.bahamaclothes.com: Enter username for www.christiesimages.com at www.christiesimages.com: step 30, cross_entropy 10.4147
-step 35, cross_entropy 10.2277
-step 40, cross_entropy 10.0919
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 272 get requests, put_count=4331 evicted_count=4000 eviction_rate=0.923574 and unsatisfied allocation rate=0
+step 20, cross_entropy 7.42086
 test accuracy 0.0078125
-step 45, cross_entropy 9.92743
-step 50, cross_entropy 9.75093
-step 55, cross_entropy 9.63102
-step 60, cross_entropy 9.48408
-test accuracy 0
-step 65, cross_entropy 9.37507
-step 70, cross_entropy 9.25435
-step 75, cross_entropy 9.12383
-Enter username for thebettingblog.com at www.uktvstyle.co.uk: Enter username for thebettingblog.com at www.uktvstyle.co.uk: Enter username for thebettingblog.com at www.uktvstyle.co.uk: Enter username for thebettingblog.com at www.uktvstyle.co.uk: Enter username for thebettingblog.com at www.uktvstyle.co.uk: Enter username for dev at static.rides.nl: Enter username for dev at static.rides.nl: Enter username for dev at static.rides.nl: Enter username for dev at static.rides.nl: step 80, cross_entropy 9.01241
-test accuracy 0
-Enter username for Ohne Login geht hier nichts mehr! at www.bluemchen-auslese.de: step 85, cross_entropy 8.93587
-step 90, cross_entropy 8.79932
-step 95, cross_entropy 8.73549
-step 100, cross_entropy 8.61973
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 0 get requests, put_count=3072 evicted_count=3000 eviction_rate=0.976562 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 0 get requests, put_count=4087 evicted_count=4000 eviction_rate=0.978713 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 0 get requests, put_count=3105 evicted_count=3000 eviction_rate=0.966184 and unsatisfied allocation rate=0
+step 25, cross_entropy 7.38793
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 15 get requests, put_count=1155 evicted_count=1000 eviction_rate=0.865801 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 0 get requests, put_count=1169 evicted_count=1000 eviction_rate=0.855432 and unsatisfied allocation rate=0
+step 30, cross_entropy 7.35993
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 0 get requests, put_count=2204 evicted_count=2000 eviction_rate=0.907441 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 0 get requests, put_count=1272 evicted_count=1000 eviction_rate=0.786164 and unsatisfied allocation rate=0
+step 35, cross_entropy 7.36442
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 10704 get requests, put_count=10756 evicted_count=2000 eviction_rate=0.185943 and unsatisfied allocation rate=0.215807
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 3987 to 4385
+step 40, cross_entropy 7.34834
 test accuracy 0.00390625
-step 105, cross_entropy 8.5644
-step 110, cross_entropy 8.46001
-step 115, cross_entropy 8.40323
-step 120, cross_entropy 8.31794
-test accuracy 0.0234375
-step 125, cross_entropy 8.23295
-step 130, cross_entropy 8.15122
-step 135, cross_entropy 8.09779
-step 140, cross_entropy 8.0375
+step 45, cross_entropy 7.30666
+step 50, cross_entropy 7.30641
+step 55, cross_entropy 7.28544
+step 60, cross_entropy 7.29508
+test accuracy 0.00390625
+step 65, cross_entropy 7.29189
+step 70, cross_entropy 7.28927
+step 75, cross_entropy 7.28885
+step 80, cross_entropy 7.27602
+test accuracy 0
+step 85, cross_entropy 7.26704
+step 90, cross_entropy 7.25582
+step 95, cross_entropy 7.26053
+step 100, cross_entropy 7.25074
+test accuracy 0.0078125
+step 105, cross_entropy 7.24791
+step 110, cross_entropy 7.2389
+step 115, cross_entropy 7.24462
+step 120, cross_entropy 7.2518
+test accuracy 0.0195312
+step 125, cross_entropy 7.24298
+step 130, cross_entropy 7.24197
+step 135, cross_entropy 7.23426
+step 140, cross_entropy 7.21824
+test accuracy 0.00390625
+step 145, cross_entropy 7.22405
+step 150, cross_entropy 7.20683
+step 155, cross_entropy 7.19956
+step 160, cross_entropy 7.20697
 test accuracy 0.015625
-step 145, cross_entropy 7.9779
-step 150, cross_entropy 7.92609
-step 155, cross_entropy 7.87786
-step 160, cross_entropy 7.81088
-test accuracy 0.0078125
-step 165, cross_entropy 7.79067
-Enter username for Members Area at www.mariusursache.com: step 170, cross_entropy 7.72528
-step 175, cross_entropy 7.6852
-Enter username for Blog Protegido at krisbr.zip.net: step 180, cross_entropy 7.63558
-test accuracy 0.0078125
-Enter username for Protected at familynews.typepad.com: Enter username for www.christiesimages.com at www.christiesimages.com: Enter username for Protected at rarebirdfinds.typepad.com: step 185, cross_entropy 7.6024
-step 190, cross_entropy 7.58168
-step 195, cross_entropy 7.53722
-step 200, cross_entropy 7.51409
-test accuracy 0.00390625
-Model saved in ../../ckpt/ResNet_imagenet/
-step 205, cross_entropy 7.46854
-step 210, cross_entropy 7.42327
-step 215, cross_entropy 7.41413
-step 220, cross_entropy 7.37093
+step 165, cross_entropy 7.18594
+step 170, cross_entropy 7.16998
+step 175, cross_entropy 7.16436
+step 180, cross_entropy 7.15217
+test accuracy 0.0273438
+step 185, cross_entropy 7.14291
+step 190, cross_entropy 7.15356
+step 195, cross_entropy 7.14491
+step 200, cross_entropy 7.14312
 test accuracy 0.0234375
-step 225, cross_entropy 7.35587
+Model saved in ../../ckpt/models.ResNet50_imagenet/
+step 205, cross_entropy 7.13128
+step 210, cross_entropy 7.08604
+step 215, cross_entropy 7.08604
+step 220, cross_entropy 7.07619
+test accuracy 0.015625
+step 225, cross_entropy 7.08854
+step 230, cross_entropy 7.0925
+step 235, cross_entropy 7.07685
+step 240, cross_entropy 7.06155
+test accuracy 0.015625
+step 245, cross_entropy 7.06707
+step 250, cross_entropy 7.05201
+step 255, cross_entropy 7.0335
+step 260, cross_entropy 7.0455
+test accuracy 0.0234375
+step 265, cross_entropy 7.03923
+step 270, cross_entropy 7.02105
+step 275, cross_entropy 7.02931
+step 280, cross_entropy 7.01135
+test accuracy 0.015625
+step 285, cross_entropy 7.00558
+step 290, cross_entropy 7.00141
+step 295, cross_entropy 7.01274
+step 300, cross_entropy 7
+test accuracy 0.03125
+step 305, cross_entropy 7.00604
+step 310, cross_entropy 6.9992
+step 315, cross_entropy 6.95873
+step 320, cross_entropy 6.98636
+test accuracy 0.0195312
+step 325, cross_entropy 6.99094
+step 330, cross_entropy 6.97223
+step 335, cross_entropy 6.93571
+step 340, cross_entropy 6.93544
+test accuracy 0.015625
+step 345, cross_entropy 6.92956
+step 350, cross_entropy 6.92903
+step 355, cross_entropy 6.9556
+step 360, cross_entropy 6.89064
+test accuracy 0.0117188
+step 365, cross_entropy 6.92686
+step 370, cross_entropy 6.92306
+step 375, cross_entropy 6.90617
+step 380, cross_entropy 6.92921
+test accuracy 0.0195312
+step 385, cross_entropy 6.8928
+step 390, cross_entropy 6.94719
+step 395, cross_entropy 6.88768
+step 400, cross_entropy 6.90758
+test accuracy 0.0390625
+Model saved in ../../ckpt/models.ResNet50_imagenet/
+step 405, cross_entropy 6.91898
+step 410, cross_entropy 6.86014
+step 415, cross_entropy 6.87162
+step 420, cross_entropy 6.87415
+test accuracy 0.0351562
+step 425, cross_entropy 6.8565
+step 430, cross_entropy 6.86806
+step 435, cross_entropy 6.87021
+step 440, cross_entropy 6.85122
+test accuracy 0.0351562

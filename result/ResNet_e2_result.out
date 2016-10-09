@@ -1,0 +1,318 @@
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcurand.so locally
+Training ResNet_imagenet_e2 model
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:05:00.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x40e0aa0
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 1 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:06:00.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x44f9a20
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 2 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:09:00.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x4913930
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 3 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:0a:00.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x4d31250
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 4 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:84:00.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x51525c0
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 5 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:85:00.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x5577460
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 6 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:88:00.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x59a01e0
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 7 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:89:00.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 0 to device ordinal 4
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 0 to device ordinal 5
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 0 to device ordinal 6
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 0 to device ordinal 7
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 1 to device ordinal 4
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 1 to device ordinal 5
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 1 to device ordinal 6
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 1 to device ordinal 7
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 2 to device ordinal 4
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 2 to device ordinal 5
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 2 to device ordinal 6
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 2 to device ordinal 7
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 3 to device ordinal 4
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 3 to device ordinal 5
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 3 to device ordinal 6
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 3 to device ordinal 7
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 4 to device ordinal 0
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 4 to device ordinal 1
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 4 to device ordinal 2
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 4 to device ordinal 3
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 5 to device ordinal 0
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 5 to device ordinal 1
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 5 to device ordinal 2
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 5 to device ordinal 3
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 6 to device ordinal 0
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 6 to device ordinal 1
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 6 to device ordinal 2
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 6 to device ordinal 3
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 7 to device ordinal 0
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 7 to device ordinal 1
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 7 to device ordinal 2
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 7 to device ordinal 3
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:126] DMA: 0 1 2 3 4 5 6 7 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 0:   Y Y Y Y N N N N 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 1:   Y Y Y Y N N N N 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 2:   Y Y Y Y N N N N 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 3:   Y Y Y Y N N N N 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 4:   N N N N Y Y Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 5:   N N N N Y Y Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 6:   N N N N Y Y Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 7:   N N N N Y Y Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:05:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:1) -> (device: 1, name: Tesla K80, pci bus id: 0000:06:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:2) -> (device: 2, name: Tesla K80, pci bus id: 0000:09:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:3) -> (device: 3, name: Tesla K80, pci bus id: 0000:0a:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:4) -> (device: 4, name: Tesla K80, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:5) -> (device: 5, name: Tesla K80, pci bus id: 0000:85:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:6) -> (device: 6, name: Tesla K80, pci bus id: 0000:88:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:7) -> (device: 7, name: Tesla K80, pci bus id: 0000:89:00.0)
+Variables are restored from ../../ckpt/ResNet_imagenet_e2/
+Enter username for SOSFORESTS Members Only at sosforests.com: step 1, cross_entropy 7.55767 accuracy 0.0078125
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 1912 get requests, put_count=1720 evicted_count=1000 eviction_rate=0.581395 and unsatisfied allocation rate=0.675732
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 100 to 110
+step 2, cross_entropy 7.57809 accuracy 0
+step 3, cross_entropy 7.55712 accuracy 0.0078125
+step 4, cross_entropy 7.56071 accuracy 0.0078125
+step 5, cross_entropy 7.56214 accuracy 0.015625
+step 6, cross_entropy 7.53775 accuracy 0
+step 7, cross_entropy 7.57301 accuracy 0
+step 8, cross_entropy 7.57644 accuracy 0
+step 9, cross_entropy 7.56752 accuracy 0
+step 10, cross_entropy 7.53873 accuracy 0
+step 11, cross_entropy 7.56382 accuracy 0.0078125
+step 12, cross_entropy 7.57567 accuracy 0
+step 13, cross_entropy 7.56217 accuracy 0
+step 14, cross_entropy 7.55982 accuracy 0.0078125
+step 15, cross_entropy 7.57678 accuracy 0
+step 16, cross_entropy 7.56762 accuracy 0
+step 17, cross_entropy 7.56782 accuracy 0
+step 18, cross_entropy 7.5794 accuracy 0
+step 19, cross_entropy 7.56632 accuracy 0
+step 20, cross_entropy 7.57917 accuracy 0.0078125
+step 21, cross_entropy 7.57742 accuracy 0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 1912 get requests, put_count=2110 evicted_count=1000 eviction_rate=0.473934 and unsatisfied allocation rate=0.431485
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 256 to 281
+step 22, cross_entropy 7.57371 accuracy 0
+step 23, cross_entropy 7.57871 accuracy 0.015625
+step 24, cross_entropy 7.56919 accuracy 0
+step 25, cross_entropy 7.56907 accuracy 0
+step 26, cross_entropy 7.56998 accuracy 0.015625
+step 27, cross_entropy 7.60549 accuracy 0
+step 28, cross_entropy 7.56746 accuracy 0
+step 29, cross_entropy 7.57743 accuracy 0
+step 30, cross_entropy 7.58898 accuracy 0
+step 31, cross_entropy 7.59439 accuracy 0.0078125
+step 32, cross_entropy 7.61989 accuracy 0
+step 33, cross_entropy 7.5606 accuracy 0.0078125
+step 34, cross_entropy 7.55633 accuracy 0
+step 35, cross_entropy 7.61525 accuracy 0
+step 36, cross_entropy 7.61574 accuracy 0
+step 37, cross_entropy 7.57604 accuracy 0.0078125
+step 38, cross_entropy 7.60433 accuracy 0.0078125
+step 39, cross_entropy 7.62248 accuracy 0
+step 40, cross_entropy 7.6058 accuracy 0.0078125
+step 41, cross_entropy 7.56362 accuracy 0.0078125
+step 42, cross_entropy 7.56878 accuracy 0
+step 43, cross_entropy 7.57753 accuracy 0.0078125
+step 44, cross_entropy 7.59787 accuracy 0.0078125
+step 45, cross_entropy 7.55138 accuracy 0.078125
+step 46, cross_entropy 7.57169 accuracy 0.0234375
+step 47, cross_entropy 7.61103 accuracy 0
+step 48, cross_entropy 7.59309 accuracy 0.0078125
+step 49, cross_entropy 7.56709 accuracy 0
+step 50, cross_entropy 7.59156 accuracy 0
+step 51, cross_entropy 7.56558 accuracy 0.015625
+step 52, cross_entropy 7.59977 accuracy 0
+step 53, cross_entropy 7.59488 accuracy 0.0234375
+step 54, cross_entropy 7.51893 accuracy 0.09375
+step 55, cross_entropy 7.52665 accuracy 0.0078125
+step 56, cross_entropy 7.5598 accuracy 0.09375
+step 57, cross_entropy 7.60807 accuracy 0
+step 58, cross_entropy 7.57484 accuracy 0
+step 59, cross_entropy 7.58062 accuracy 0.0078125
+step 60, cross_entropy 7.60165 accuracy 0.015625
+step 61, cross_entropy 7.59984 accuracy 0.015625
+step 62, cross_entropy 7.58397 accuracy 0.0078125
+step 63, cross_entropy 7.54655 accuracy 0.0390625
+step 64, cross_entropy 7.5762 accuracy 0
+step 65, cross_entropy 7.5736 accuracy 0
+step 66, cross_entropy 7.62514 accuracy 0.0078125
+step 67, cross_entropy 7.50686 accuracy 0.03125
+step 68, cross_entropy 7.58785 accuracy 0.0078125
+step 69, cross_entropy 7.59979 accuracy 0.0234375
+step 70, cross_entropy 7.53293 accuracy 0.0234375
+step 71, cross_entropy 7.589 accuracy 0
+step 72, cross_entropy 7.63475 accuracy 0
+step 73, cross_entropy 7.55846 accuracy 0.03125
+step 74, cross_entropy 7.50383 accuracy 0.046875
+step 75, cross_entropy 7.57062 accuracy 0
+step 76, cross_entropy 7.55899 accuracy 0.0078125
+step 77, cross_entropy 7.60712 accuracy 0
+Enter username for public_html at www.lo-inexplicable.com.ar: step 78, cross_entropy 7.54321 accuracy 0.015625
+step 79, cross_entropy 7.60112 accuracy 0.0078125
+step 80, cross_entropy 7.62816 accuracy 0.0078125
+step 81, cross_entropy 7.53109 accuracy 0.0234375
+step 82, cross_entropy 7.52433 accuracy 0.0546875
+step 83, cross_entropy 7.63832 accuracy 0
+step 84, cross_entropy 7.63176 accuracy 0.0078125
+step 85, cross_entropy 7.67383 accuracy 0
+step 86, cross_entropy 7.65295 accuracy 0.0078125
+step 87, cross_entropy 7.64532 accuracy 0
+step 88, cross_entropy 7.64263 accuracy 0
+step 89, cross_entropy 7.68608 accuracy 0
+step 90, cross_entropy 7.58115 accuracy 0.0859375
+step 91, cross_entropy 7.54134 accuracy 0.09375
+step 92, cross_entropy 7.63823 accuracy 0.0078125
+step 93, cross_entropy 7.61931 accuracy 0
+step 94, cross_entropy 7.58399 accuracy 0.015625
+step 95, cross_entropy 7.60624 accuracy 0
+step 96, cross_entropy 7.63477 accuracy 0
+step 97, cross_entropy 7.62409 accuracy 0
+step 98, cross_entropy 7.63934 accuracy 0.015625
+step 99, cross_entropy 7.5688 accuracy 0.0078125
+step 100, cross_entropy 7.5874 accuracy 0.0078125
+step 101, cross_entropy 7.61397 accuracy 0
+step 102, cross_entropy 7.6262 accuracy 0.0078125
+step 103, cross_entropy 7.63542 accuracy 0
+step 104, cross_entropy 7.64906 accuracy 0
+step 105, cross_entropy 7.55569 accuracy 0.015625
+step 106, cross_entropy 7.57643 accuracy 0.0078125
+Enter username for Protected at www.pittsburghsoccer.com: step 107, cross_entropy 7.57212 accuracy 0
+step 108, cross_entropy 7.5898 accuracy 0.0078125
+step 109, cross_entropy 7.60676 accuracy 0.015625
+step 110, cross_entropy 7.57571 accuracy 0.03125
+step 111, cross_entropy 7.6165 accuracy 0
+Enter username for Temporarily Closed Pending Security Update at www.af-moma.no: step 112, cross_entropy 7.57228 accuracy 0.015625
+step 113, cross_entropy 7.55015 accuracy 0.0078125
+step 114, cross_entropy 7.50941 accuracy 0.0078125
+step 115, cross_entropy 7.57819 accuracy 0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 42064 get requests, put_count=42024 evicted_count=1000 eviction_rate=0.0237959 and unsatisfied allocation rate=0.0261269
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 655 to 720
+step 116, cross_entropy 7.55801 accuracy 0.0078125
+step 117, cross_entropy 7.58129 accuracy 0.0078125
+step 118, cross_entropy 7.56218 accuracy 0.0234375
+step 119, cross_entropy 7.56472 accuracy 0
+step 120, cross_entropy 7.56358 accuracy 0.0078125
+step 121, cross_entropy 7.56692 accuracy 0
+step 122, cross_entropy 7.50775 accuracy 0.078125
+step 123, cross_entropy 7.53695 accuracy 0.03125
+step 124, cross_entropy 7.52841 accuracy 0.0078125
+step 125, cross_entropy 7.5993 accuracy 0
+step 126, cross_entropy 7.53855 accuracy 0
+step 127, cross_entropy 7.54127 accuracy 0
+Enter username for SOSFORESTS Members Only at sosforests.com: step 128, cross_entropy 7.55916 accuracy 0.015625
+step 129, cross_entropy 7.52536 accuracy 0.015625
+step 130, cross_entropy 7.58564 accuracy 0.0078125
+step 131, cross_entropy 7.61303 accuracy 0
+step 132, cross_entropy 7.5275 accuracy 0.0078125
+step 133, cross_entropy 7.58794 accuracy 0.0078125
+step 134, cross_entropy 7.5468 accuracy 0.015625
+step 135, cross_entropy 7.541 accuracy 0.0078125
+step 136, cross_entropy 7.55166 accuracy 0
+step 137, cross_entropy 7.57193 accuracy 0
+step 138, cross_entropy 7.52309 accuracy 0
+step 139, cross_entropy 7.50838 accuracy 0.046875
+step 140, cross_entropy 7.60621 accuracy 0
+step 141, cross_entropy 7.56484 accuracy 0.015625
+step 142, cross_entropy 7.50267 accuracy 0.03125
+step 143, cross_entropy 7.57335 accuracy 0
+step 144, cross_entropy 7.49792 accuracy 0.0078125
+step 145, cross_entropy 7.52332 accuracy 0.0078125
+step 146, cross_entropy 7.64729 accuracy 0.0078125
+step 147, cross_entropy 7.58002 accuracy 0
+step 148, cross_entropy 7.63427 accuracy 0
+step 149, cross_entropy 7.50707 accuracy 0
+step 150, cross_entropy 7.6416 accuracy 0.0078125
+step 151, cross_entropy 7.5157 accuracy 0.0546875
+step 152, cross_entropy 7.49804 accuracy 0
+step 153, cross_entropy 7.45077 accuracy 0
+step 154, cross_entropy 7.5265 accuracy 0.0078125
+step 155, cross_entropy 7.64105 accuracy 0
+step 156, cross_entropy 7.51247 accuracy 0.03125
+step 157, cross_entropy 7.59889 accuracy 0.0078125
+Enter username for staging.wcsh6.com at staging.wcsh6.com: step 158, cross_entropy 7.52827 accuracy 0.09375
+step 159, cross_entropy 7.59503 accuracy 0.015625
+step 160, cross_entropy 7.40318 accuracy 0.117188
+step 161, cross_entropy 7.6414 accuracy 0.03125
+step 162, cross_entropy 7.55068 accuracy 0.046875
+Enter username for Access to /logs at www.fasttempengineering.co.uk: step 163, cross_entropy 7.67873 accuracy 0.0078125
+step 164, cross_entropy 7.64408 accuracy 0.015625
+step 165, cross_entropy 7.68586 accuracy 0
+step 166, cross_entropy 7.5914 accuracy 0
+step 167, cross_entropy 7.66258 accuracy 0
+step 168, cross_entropy 7.62803 accuracy 0.015625
+step 169, cross_entropy 7.61569 accuracy 0
+step 170, cross_entropy 7.5824 accuracy 0.0234375
+step 171, cross_entropy 7.64238 accuracy 0.015625
+step 172, cross_entropy 7.6509 accuracy 0.0078125
+step 173, cross_entropy 7.59301 accuracy 0.0234375
+step 174, cross_entropy 7.63818 accuracy 0.0234375
+step 175, cross_entropy 7.63212 accuracy 0
+step 176, cross_entropy 7.59654 accuracy 0.0078125
+step 177, cross_entropy 7.6443 accuracy 0.0234375
+step 178, cross_entropy 7.66382 accuracy 0
+step 179, cross_entropy 7.6326 accuracy 0.0078125
+step 180, cross_entropy 7.60274 accuracy 0
+step 181, cross_entropy 7.61761 accuracy 0.0078125
+step 182, cross_entropy 7.66334 accuracy 0.0078125
+step 183, cross_entropy 7.59756 accuracy 0.0078125
+step 184, cross_entropy 7.56516 accuracy 0.0234375
+step 185, cross_entropy 7.5572 accuracy 0.0078125
+step 186, cross_entropy 7.64039 accuracy 0
+step 187, cross_entropy 7.62447 accuracy 0
+step 188, cross_entropy 7.62447 accuracy 0
+step 189, cross_entropy 7.55201 accuracy 0.03125
+step 190, cross_entropy 7.58964 accuracy 0
+step 191, cross_entropy 7.59846 accuracy 0.046875
+step 192, cross_entropy 7.51981 accuracy 0.0390625
+step 193, cross_entropy 7.63245 accuracy 0.015625
+step 194, cross_entropy 7.60328 accuracy 0
+step 195, cross_entropy 7.63827 accuracy 0
+step 196, cross_entropy 7.57286 accuracy 0.015625
+step 197, cross_entropy 7.60774 accuracy 0
+step 198, cross_entropy 7.60836 accuracy 0.015625
+step 199, cross_entropy 7.60367 accuracy 0
+step 200, cross_entropy 7.57847 accuracy 0
+Model saved in ../../ckpt/ResNet_imagenet_e2/

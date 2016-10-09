@@ -3,55 +3,56 @@ I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library
 I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcufft.so locally
 I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcuda.so.1 locally
 I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcurand.so locally
+Testing models.ResNet18_imagenet model
 I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 0 with properties: 
 name: Tesla K80
 major: 3 minor: 7 memoryClockRate (GHz) 0.8235
 pciBusID 0000:05:00.0
 Total memory: 11.25GiB
 Free memory: 11.13GiB
-W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x6a08150
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x3b0dc10
 I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 1 with properties: 
 name: Tesla K80
 major: 3 minor: 7 memoryClockRate (GHz) 0.8235
 pciBusID 0000:06:00.0
 Total memory: 11.25GiB
 Free memory: 11.13GiB
-W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x6e1ac20
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x3f281e0
 I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 2 with properties: 
 name: Tesla K80
 major: 3 minor: 7 memoryClockRate (GHz) 0.8235
 pciBusID 0000:09:00.0
 Total memory: 11.25GiB
 Free memory: 11.13GiB
-W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x7231e30
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x4342060
 I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 3 with properties: 
 name: Tesla K80
 major: 3 minor: 7 memoryClockRate (GHz) 0.8235
 pciBusID 0000:0a:00.0
 Total memory: 11.25GiB
 Free memory: 11.13GiB
-W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x764f990
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x475fa10
 I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 4 with properties: 
 name: Tesla K80
 major: 3 minor: 7 memoryClockRate (GHz) 0.8235
 pciBusID 0000:84:00.0
 Total memory: 11.25GiB
 Free memory: 11.13GiB
-W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x7a71060
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x4b80e10
 I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 5 with properties: 
 name: Tesla K80
 major: 3 minor: 7 memoryClockRate (GHz) 0.8235
 pciBusID 0000:85:00.0
 Total memory: 11.25GiB
 Free memory: 11.13GiB
-W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x7e96020
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x4fa5cb0
 I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 6 with properties: 
 name: Tesla K80
 major: 3 minor: 7 memoryClockRate (GHz) 0.8235
 pciBusID 0000:88:00.0
 Total memory: 11.25GiB
 Free memory: 11.13GiB
-W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x82beda0
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x53ceac0
 I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 7 with properties: 
 name: Tesla K80
 major: 3 minor: 7 memoryClockRate (GHz) 0.8235
@@ -107,106 +108,6 @@ I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow devi
 I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:5) -> (device: 5, name: Tesla K80, pci bus id: 0000:85:00.0)
 I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:6) -> (device: 6, name: Tesla K80, pci bus id: 0000:88:00.0)
 I tensorflow/core/common_runtime/gpu/gpu_device.cc:839] Creating TensorFlow device (/gpu:7) -> (device: 7, name: Tesla K80, pci bus id: 0000:89:00.0)
-I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 1912 get requests, put_count=1619 evicted_count=1000 eviction_rate=0.617665 and unsatisfied allocation rate=0.728556
-I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 100 to 110
-I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 1912 get requests, put_count=1817 evicted_count=1000 eviction_rate=0.550358 and unsatisfied allocation rate=0.583682
-I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 233 to 256
-I tensorflow/core/common_runtime/gpu/pool_allocator.cc:244] PoolAllocator: After 1912 get requests, put_count=2129 evicted_count=1000 eviction_rate=0.469704 and unsatisfied allocation rate=0.435146
-I tensorflow/core/common_runtime/gpu/pool_allocator.cc:256] Raising pool_size_limit_ from 542 to 596
-Training ResNet_imagenet model
-Variables are initialized
-step 5, cross_entropy 292.668
-step 10, cross_entropy 248.321
-step 15, cross_entropy 234.784
-step 20, cross_entropy 223.472
-test accuracy 0
-step 25, cross_entropy 212.595
-step 30, cross_entropy 202.592
-step 35, cross_entropy 192.961
-step 40, cross_entropy 183.797
-test accuracy 0
-step 45, cross_entropy 175.195
-step 50, cross_entropy 166.92
-Enter username for dev at static.rides.nl: Enter username for dev at static.rides.nl: Enter username for dev at static.rides.nl: step 55, cross_entropy 159.123
-step 60, cross_entropy 151.676
-test accuracy 0
-step 65, cross_entropy 144.563
-step 70, cross_entropy 137.778
-step 75, cross_entropy 131.374
-step 80, cross_entropy 125.342
-test accuracy 0.00390625
-step 85, cross_entropy 119.543
-step 90, cross_entropy 114.039
-Enter username for Restricted Area at www.fallingstar.net: Enter username for Restricted Area at www.fallingstar.net: Enter username for Restricted Area at www.fallingstar.net: Enter username for Restricted Area at www.fallingstar.net: step 95, cross_entropy 108.783
-step 100, cross_entropy 103.769
-test accuracy 0.0117188
-step 105, cross_entropy 99.0446
-step 110, cross_entropy 94.5087
-step 115, cross_entropy 90.2442
-step 120, cross_entropy 86.1437
-test accuracy 0.00390625
-step 125, cross_entropy 82.2708
-step 130, cross_entropy 78.5821
-Enter username for ByPassword at www.premier-tools.com: Enter username for ByPassword at www.premier-tools.com: step 135, cross_entropy 75.0493
-step 140, cross_entropy 71.768
-test accuracy 0.0117188
-step 145, cross_entropy 68.5537
-step 150, cross_entropy 65.558
-step 155, cross_entropy 62.7173
-step 160, cross_entropy 59.9534
-test accuracy 0
-step 165, cross_entropy 57.3411
-step 170, cross_entropy 54.9161
-step 175, cross_entropy 52.5307
-step 180, cross_entropy 50.3162
-test accuracy 0.0078125
-Enter username for Protected at www.pittsburghsoccer.com: Enter username for Protected at www.pittsburghsoccer.com: Enter username for Protected at www.pittsburghsoccer.com: step 185, cross_entropy 48.1656
-Enter username for Protected at www.runawayplanet.com: Enter username for Protected at www.runawayplanet.com: Enter username for Protected at www.runawayplanet.com: Enter username for Protected at www.runawayplanet.com: Enter username for Protected at www.runawayplanet.com: step 190, cross_entropy 46.1623
-Enter username for Members Area at blog.muevelonyc.com: Enter username for Members Area at blog.muevelonyc.com: step 195, cross_entropy 44.2406
-step 200, cross_entropy 42.3997
-test accuracy 0
-Model saved in ../../ckpt/ResNet_imagenet/
-step 205, cross_entropy 40.6706
-step 210, cross_entropy 39.0489
-step 215, cross_entropy 37.4511
-step 220, cross_entropy 35.954
-test accuracy 0.00390625
-step 225, cross_entropy 34.5332
-step 230, cross_entropy 33.1594
-step 235, cross_entropy 31.8961
-step 240, cross_entropy 30.6725
-test accuracy 0.0117188
-step 245, cross_entropy 29.533
-step 250, cross_entropy 28.3898
-step 255, cross_entropy 27.3591
-step 260, cross_entropy 26.3492
-test accuracy 0.015625
-step 265, cross_entropy 25.413
-step 270, cross_entropy 24.4873
-Enter username for Protected at tatiana.blogs.com: Enter username for Protected at tatiana.blogs.com: Enter username for Protected at tatiana.blogs.com: step 275, cross_entropy 23.616
-step 280, cross_entropy 22.8165
-test accuracy 0.0078125
-step 285, cross_entropy 22.0072
-step 290, cross_entropy 21.2723
-step 295, cross_entropy 20.5775
-step 300, cross_entropy 19.912
-test accuracy 0
-step 305, cross_entropy 19.2621
-step 310, cross_entropy 18.6951
-Enter username for Liferay at www.fossweb.com: step 315, cross_entropy 18.1035
-step 320, cross_entropy 17.5285
-test accuracy 0
-step 325, cross_entropy 16.9999
-step 330, cross_entropy 16.5018
-step 335, cross_entropy 16.0843
-step 340, cross_entropy 15.582
-test accuracy 0
-step 345, cross_entropy 15.1809
-step 350, cross_entropy 14.7708
-step 355, cross_entropy 14.3595
-step 360, cross_entropy 14.0329
-test accuracy 0.00390625
-step 365, cross_entropy 13.6645
-step 370, cross_entropy 13.3286
-step 375, cross_entropy 13.0222
-Enter username f
+Variables are restored from ../../ckpt/models.ResNet18_imagenet/
+test accuracy 0.268125
+highest accuracy: 0.268125

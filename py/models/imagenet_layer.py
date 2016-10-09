@@ -8,7 +8,7 @@ def _variable_on_cpu(shape, init, name, dtype=tf.float32, trainable=True):
                                initializer=init, trainable=trainable)
 
 #variables for convolutional network
-def weight_variable(shape, stdev=0.05, wd=0.0):
+def weight_variable(shape, stdev=0.01, wd=0.0005):
     init = tf.truncated_normal_initializer(stddev=stdev, dtype=tf.float32)
     var = _variable_on_cpu(shape=shape, init=init, name='weights')
     if wd is not None:
@@ -21,19 +21,28 @@ def bias_variable(shape, const=0.1):
     return _variable_on_cpu(shape=shape, init=init, name='biases')
 
 #layers
-def conv2d_layer(x, shape, stride=1, name='conv2d', activation_fn=None):
+def fc_layer(x, shape, name='fc', activation_fn=None):
+    with tf.variable_scope(name) as scope:
+        kernel = weight_variable(shape=shape)
+        biases = bias_variable(shape=[shape[1]])
+        outputs = tf.add(tf.matmul(x, kernel), biases, name=scope.name)
+        if activation_fn:
+            outputs=activation_fn(outputs)
+        return outputs
+
+def conv2d_layer(x, shape, stride=1, name='conv2d', padding='SAME', activation_fn=None):
     with tf.variable_scope(name) as scope:
         kernel = weight_variable(shape=shape)
         biases = bias_variable(shape=shape[3])
-        conv = tf.nn.conv2d(x, kernel, [1,stride,stride,1], padding='SAME')
+        conv = tf.nn.conv2d(x, kernel, [1,stride,stride,1], padding=padding)
         outputs = tf.nn.bias_add(conv,biases)
         if activation_fn:
             outputs=activation_fn(outputs)
         return outputs
 
-def max_pool_layer(x, stride=2, name='max_pool'):
+def max_pool_layer(x, shape=[3,3,1], stride=2, name='max_pool'):
     with tf.variable_scope(name) as scope:
-        outputs=tf.nn.max_pool(x, name=name, ksize=[1,3,3,1],
+        outputs=tf.nn.max_pool(x, name=name, ksize=[1]+shape,
                                strides=[1,stride,stride,1],padding='SAME')
         return outputs
 
@@ -57,12 +66,14 @@ def inception_layer(x, width, ker1, red3, ker3, red5, ker5, pool, name='inceptio
         outputs= tf.concat(3, [conv1, conv3, conv5, pool_conv], name=name)
         return outputs
 
-def residual_layer(x, shape, name='residual', activation_fn=tf.nn.relu):
+def residual_layer(x, shape, is_training=True, name='residual', activation_fn=tf.nn.relu):
     with tf.variable_scope(name) as scope:
         assert shape[2]==shape[3]    
-        conv1 = conv2d_layer(x, shape, name='conv1', activation_fn=tf.nn.relu)
-        conv2 = conv2d_layer(conv1, shape, name='conv2')
-        outputs = tf.add(x,conv2, name=scope.name)
+        conv1 = conv2d_layer(x, shape, name='conv1')
+        batch1 = bn_layer(conv1, is_training, activation_fn = tf.nn.relu, name="batch1")
+        conv2 = conv2d_layer(batch1, shape, name='conv2')
+        batch2 = bn_layer(conv2, is_training, activation_fn = tf.nn.relu, name='batch2')
+        outputs = tf.add(x,batch2, name=scope.name)
         if activation_fn:
             outputs = activation_fn(outputs)
         return outputs
@@ -82,7 +93,7 @@ def resinc_layer(x, width, ker1, red3, ker3, red5, ker5, pool, ker=3,
         return outputs
 
 def bn_layer(inputs, is_training=True, trainable=True, activation_fn=None,
-             decay=0.999, center=True, scale=False, epsilon=0.001, name="BatchNorm"):
+             decay=0.999, center=True, scale=True, epsilon=0.001, name="BatchNorm"):
     with tf.variable_scope(name) as sc:
         inputs_shape = inputs.get_shape()
         inputs_rank = inputs_shape.ndims
